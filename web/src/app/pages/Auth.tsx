@@ -5,7 +5,7 @@
 //   - mode='signin'  → single-step form (email + password)
 //   - mode='signup'  → two-step form
 //       step 1: name, email, password, confirm-password
-//       step 2: region, language
+//       step 2: region, land size, farm type, language
 //
 // The screen is URL-driven (/auth?mode=signin | signup) so the Link from
 // the Landing page can deep-link the right form. Mode flips client-side
@@ -22,7 +22,7 @@
 //                     if step 2 had data, PATCH /api/me to attach the
 //                     farm profile → navigate('/dashboard')
 
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router';
 import {
   Sprout,
@@ -32,6 +32,7 @@ import {
   Mail,
   Lock,
   MapPin,
+  Layers,
   Languages,
   Eye,
   EyeOff,
@@ -52,8 +53,17 @@ type Mode = 'signin' | 'signup';
 
 interface ProfileForm {
   region: string;
+  land_size: string; // string while editing, coerced to number on submit
+  farm_type: 'Subsistence' | 'Commercial' | 'Mixed' | 'Organic' | '';
   language: Locale;
 }
+
+const FARM_TYPES: Array<ProfileForm['farm_type']> = [
+  'Subsistence',
+  'Commercial',
+  'Mixed',
+  'Organic',
+];
 
 export function Auth() {
   const [params, setParams] = useSearchParams();
@@ -78,6 +88,8 @@ export function Auth() {
   // -------------------- sign-up / step-2 form state --------------------
   const [profile, setProfile] = useState<ProfileForm>({
     region: '',
+    land_size: '',
+    farm_type: '',
     language: locale,
   });
 
@@ -122,7 +134,8 @@ export function Auth() {
         body: { email: signInEmail.trim().toLowerCase(), password: signInPassword },
       });
       login(res.token, res.user);
-
+      // Restore the user's saved language preference (from the profile
+      // saved at signup) so the app renders in their chosen locale.
       if (res.user.language && res.user.language !== locale) setLocale(res.user.language);
       toast.success(t('authSuccess'));
       navigate('/dashboard', { replace: true });
@@ -146,9 +159,14 @@ export function Auth() {
     setError(null);
     setSubmitting(true);
 
+    // Apply the chosen language straight away so the rest of the app
+    // (including the post-signup dashboard) appears in the user's locale.
     if (profile.language !== locale) setLocale(profile.language);
 
     try {
+      // 1. Register with the bare minimum — backend will accept the rest
+      //    as optional profile fields and return them in the JWT payload.
+      const landSizeNum = profile.land_size === '' ? null : Number(profile.land_size);
       const res = await apiFetch<{ token: string; user: AuthUser }>('/api/register', {
         method: 'POST',
         body: {
@@ -156,19 +174,29 @@ export function Auth() {
           email: email.trim().toLowerCase(),
           password,
           region: profile.region.trim() || null,
+          land_size: Number.isFinite(landSizeNum) ? landSizeNum : null,
+          farm_type: profile.farm_type || null,
           language: profile.language,
         },
       });
       login(res.token, res.user);
 
+      // 2. If anything was missing in the initial INSERT (e.g. the user
+      //    skipped the optional fields and we want to be sure of the
+      //    final state), PATCH /api/me to sync. The backend re-issues
+      //    a fresh JWT if anything changed.
       const needsPatch =
         (res.user.region ?? null) !== (profile.region.trim() || null) ||
+        (res.user.land_size ?? null) !== (Number.isFinite(landSizeNum) ? landSizeNum : null) ||
+        (res.user.farm_type ?? null) !== (profile.farm_type || null) ||
         (res.user.language ?? null) !== profile.language;
       if (needsPatch) {
         const patched = await apiFetch<{ token: string; user: AuthUser }>('/api/me', {
           method: 'PATCH',
           body: {
             region: profile.region.trim() || null,
+            land_size: Number.isFinite(landSizeNum) ? landSizeNum : null,
+            farm_type: profile.farm_type || null,
             language: profile.language,
           },
         });
@@ -398,6 +426,7 @@ function Field({
 }
 
 function inputClass(extra?: string) {
+  // Pad the start so the icon has room without overlapping the user's text.
   return ['h-11', extra ?? 'ps-9'].filter(Boolean).join(' ');
 }
 
@@ -550,6 +579,16 @@ function SignUpStep2(props: {
 }) {
   const { profile, setProfile, submitting, onSubmit, onBack, t, locale, setLocale } = props;
 
+  const farmTypeLabels = useMemo<Record<'Subsistence' | 'Commercial' | 'Mixed' | 'Organic', string>>(
+    () => ({
+      Subsistence: t('authFarmTypeSubsistence'),
+      Commercial: t('authFarmTypeCommercial'),
+      Mixed: t('authFarmTypeMixed'),
+      Organic: t('authFarmTypeOrganic'),
+    }),
+    [t]
+  );
+
   return (
     <form onSubmit={onSubmit} className="space-y-4" noValidate>
       <Field label={t('authRegion')} htmlFor="su-region" icon={<MapPin className="w-4 h-4" />}>
@@ -561,6 +600,42 @@ function SignUpStep2(props: {
           placeholder={t('authRegionPlaceholder')}
         />
       </Field>
+      <Field label={t('authLandSize')} htmlFor="su-land" icon={<Layers className="w-4 h-4" />}>
+        <Input
+          id="su-land"
+          type="number"
+          min="0"
+          step="0.1"
+          value={profile.land_size}
+          onChange={(e) => setProfile((p) => ({ ...p, land_size: e.target.value }))}
+          className={inputClass()}
+          placeholder={t('authLandSizePlaceholder')}
+        />
+      </Field>
+
+      <div className="space-y-1.5">
+        <label className="text-sm font-medium text-foreground block">{t('authFarmType')}</label>
+        <div className="grid grid-cols-2 gap-2">
+          {FARM_TYPES.map((ft) => {
+            const active = profile.farm_type === ft;
+            return (
+              <button
+                type="button"
+                key={ft}
+                onClick={() => setProfile((p) => ({ ...p, farm_type: ft }))}
+                className={[
+                  'h-10 rounded-md border text-sm transition-all',
+                  active
+                    ? 'border-primary-green bg-primary-green/10 text-primary-green font-medium'
+                    : 'border-border text-foreground hover:border-primary-green/50',
+                ].join(' ')}
+              >
+                {farmTypeLabels[ft as 'Subsistence' | 'Commercial' | 'Mixed' | 'Organic']}
+              </button>
+            );
+          })}
+        </div>
+      </div>
 
       <div className="space-y-1.5">
         <label className="text-sm font-medium text-foreground block">
