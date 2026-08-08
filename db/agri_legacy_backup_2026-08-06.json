@@ -1,0 +1,125 @@
+{
+  "users": {
+    "columns": [
+      "id",
+      "name",
+      "email",
+      "password_hash",
+      "created_at",
+      "region",
+      "land_size",
+      "farm_type",
+      "language",
+      "role"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "name": "Test User",
+        "email": "test@test.com",
+        "password_hash": "$2a$12$QlAnwIvDxZLHdlID4SOyROO6WA3yt6/.c/l6tIcgeU6kSOJ4IRj3W",
+        "created_at": "2026-08-05 09:33:59",
+        "region": null,
+        "land_size": null,
+        "farm_type": null,
+        "language": "en",
+        "role": "farmer"
+      },
+      {
+        "id": 2,
+        "name": "Said Mahad Bashiir",
+        "email": "salmanbashiir00@gmail.com",
+        "password_hash": "$2a$12$MrgKTwlFZEjT/cV.D1pVQ.bE/aEH2kqIX6p4dvlzbx0K/b2DVcgTG",
+        "created_at": "2026-08-05 09:48:45",
+        "region": null,
+        "land_size": null,
+        "farm_type": null,
+        "language": "en",
+        "role": "farmer"
+      },
+      {
+        "id": 3,
+        "name": "Test Farmer",
+        "email": "screenshottest@example.com",
+        "password_hash": "$2a$12$hH6/Ziosfdbe7SE8iGhhpePWd2dOJJIhvGQbhu/kYdAUNY3trqlii",
+        "created_at": "2026-08-05 16:36:24",
+        "region": null,
+        "land_size": null,
+        "farm_type": null,
+        "language": "en",
+        "role": "farmer"
+      },
+      {
+        "id": 4,
+        "name": "G1 Smoke",
+        "email": "g1-smoke-1786024251@farmerai.test",
+        "password_hash": "$2a$12$4MPbYpoGLbl5nTg9Vst6seLr/aQIUfrteGJNX/4.e7Jq6edzdxWzW",
+        "created_at": "2026-08-06 13:50:52",
+        "region": null,
+        "land_size": null,
+        "farm_type": null,
+        "language": "en",
+        "role": "farmer"
+      }
+    ]
+  },
+  "crops": {
+    "columns": [
+      "id",
+      "crop_name",
+      "local_name",
+      "season",
+      "planting_method",
+      "irrigation",
+      "fertilizer",
+      "common_pests",
+      "days_to_harvest"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "crop_name": "Galley",
+        "local_name": "Maize / Corn",
+        "season": "Gu (main rainy season, Apr–Jun) or under irrigation year-round",
+        "planting_method": "Direct-seed in rows 75cm apart, 25cm between plants, 3–5cm deep. Plant 2 seeds per hole and thin to the strongest seedling after 2 weeks. Prepare land by ploughing to 20–25cm depth and breaking clods before sowing.",
+        "irrigation": "Needs 500–800mm of water over the growing cycle. Under irrigation, water every 7–10 days; increase frequency during tasseling and grain-filling (the most water-sensitive stages). Avoid waterlogging — ensure furrows drain freely.",
+        "fertilizer": "Apply well-rotted manure or compost at land preparation (10–15 tons/ha). Basal dose: DAP or NPK 20-20-0 at planting. Top-dress with urea at knee-height (30 days) and again at tasseling for stronger grain fill.",
+        "common_pests": "Fall armyworm, stem borer, maize streak virus",
+        "days_to_harvest": "90–120 days"
+      },
+      {
+        "id": 2,
+        "crop_name": "Qamadi",
+        "local_name": "Wheat",
+        "season": "Cool, dry-season planting (Jilaal) under irrigation",
+        "planting_method": "Drill seed in rows 20cm apart at 3–4cm depth, seed rate ~120kg/ha. Fine, level seedbed is essential for even germination and irrigation flow.",
+        "irrigation": "Requires 450–650mm total. Critical irrigation stages: crown root initiation (~21 days), tillering, flowering, and grain-filling. Light, frequent irrigation is better than flooding.",
+        "fertilizer": "Apply full phosphorus and half nitrogen at sowing. Top-dress remaining nitrogen (urea) split between tillering and heading stages for best grain protein and yield.",
+        "common_pests": "Rust (yellow/stem), aphids, army worm",
+        "days_to_harvest": "100–130 days"
+      },
+      {
+        "id": 3,
+        "crop_name": "Basal",
+        "local_name": "Onion",
+        "season": "Transplant during cooler months; irrigated year-round",
+        "planting_method": "Raise seedlings in a nursery bed for 6–8 weeks, then transplant at 10–15cm spacing in rows 20cm apart once seedlings reach pencil thickness. Raised beds improve drainage and bulb quality.",
+        "irrigation": "Shallow-rooted crop needing frequent light irrigation every 3–5 days, especially during bulb formation. Reduce and eventually stop watering 2–3 weeks before harvest to allow the neck to dry down.",
+        "fertilizer": "Incorporate compost/manure before transplanting. Apply nitrogen and potassium in split doses — heavier early for leaf growth, tapering off once bulbing begins to avoid soft bulbs and poor storage life.",
+        "common_pests": "Thrips, onion fly, purple blotch",
+        "days_to_harvest": "90–150 days after transplanting"
+      },
+      {
+        "id": 4,
+        "crop_name": "Yaanyo",
+        "local_name": "Tomato",
+        "season": "Best planted at the start of the dry season under irrigation",
+        "planting_method": "Start seedlings in a nursery for 3–4 weeks, transplant when 4–5 true leaves appear. Space plants 45–60cm apart in rows 90–100cm apart to allow airflow. Stake or trellis to keep fruit off the soil.",
+        "irrigation": "Consistent moisture is critical — irrigate every 4–7 days, more often in sandy soil. Uneven watering causes blossom-end rot and fruit cracking, so keep soil moisture steady rather than wet-then-dry.",
+        "fertilizer": "Apply compost and a phosphorus-rich basal fertilizer at transplanting to build strong roots. Side-dress with balanced NPK at flowering and again at first fruit set; avoid excess nitrogen, which produces leafy plants with poor fruiting.",
+        "common_pests": "Whitefly, tuta absoluta (leaf miner moth), blight",
+        "days_to_harvest": "70–100 days after transplanting"
+      }
+    ]
+  }
+}

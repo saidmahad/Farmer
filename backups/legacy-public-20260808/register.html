@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up · Beeraha Agricultural Advisor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="auth-body">
+  <nav class="topnav" id="nav"></nav>
+
+  <div class="center-shell">
+    <div class="auth-card">
+      <div class="auth-logo" aria-hidden="true"></div>
+      <div class="auth-title">Beeraha</div>
+      <h1>Create your account</h1>
+      <p class="auth-sub">Free advice for four staple crops — maize, wheat, onion, and tomato.</p>
+
+      <div class="alert alert-error" id="errorAlert" role="alert"></div>
+
+      <form id="registerForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required minlength="2">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="new-password" required minlength="8">
+          <div class="field-hint">At least 8 characters.</div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Sign Up</button>
+      </form>
+
+      <div class="form-footer">
+        Already have an account? <a href="/index.html">Sign in</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script>
+    renderNav('nav');
+    if (Auth.isLoggedIn()) window.location.href = '/crops.html';
+
+    const form = document.getElementById('registerForm');
+    const errorAlert = document.getElementById('errorAlert');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      errorAlert.classList.remove('show');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Creating account…';
+
+      try {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+        const { token, user } = await Api.register(name, email, password);
+        Auth.saveSession(token, user);
+        window.location.href = '/crops.html';
+      } catch (err) {
+        errorAlert.textContent = err.message;
+        errorAlert.classList.add('show');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Sign Up';
+      }
+    });
+  </script>
+</body>
+</html>

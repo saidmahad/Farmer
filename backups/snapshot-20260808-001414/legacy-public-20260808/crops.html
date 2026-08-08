@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select a Crop · Beeraha Agricultural Advisor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="topnav" id="nav"></nav>
+
+  <div class="page">
+    <div class="page-header">
+      <div class="page-eyebrow">Step 1 of 2</div>
+      <h1>Which crop are you growing?</h1>
+      <p>Choose a crop to see planting, irrigation, and fertilizer guidance.</p>
+    </div>
+
+    <div id="loadingState" class="loading-state">Loading crops…</div>
+    <div id="errorState" class="empty-state" style="display:none;"></div>
+    <div class="crop-grid" id="cropGrid" style="display:none;"></div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script>
+    Auth.requireAuth();
+    renderNav('nav');
+
+    const swatchColors = ['var(--grain)', 'var(--clay)', 'var(--canal)', 'var(--leaf)'];
+
+    async function loadCrops() {
+      const loadingState = document.getElementById('loadingState');
+      const errorState = document.getElementById('errorState');
+      const grid = document.getElementById('cropGrid');
+
+      try {
+        const { crops } = await Api.listCrops();
+        loadingState.style.display = 'none';
+
+        if (!crops.length) {
+          errorState.textContent = 'No crops are available yet.';
+          errorState.style.display = 'block';
+          return;
+        }
+
+        grid.innerHTML = crops
+          .map((crop, i) => `
+            <button class="crop-card" data-id="${crop.id}">
+              <div class="crop-media" style="background:${swatchColors[i % swatchColors.length]}">
+                <span class="crop-media-letter">${crop.crop_name.charAt(0)}</span>
+                <span class="crop-season">${crop.season || ''}</span>
+              </div>
+              <div class="crop-card-body">
+                <div class="crop-name">${crop.crop_name}</div>
+                <div class="crop-local">${crop.local_name || ''}</div>
+              </div>
+            </button>
+          `)
+          .join('');
+        grid.style.display = 'grid';
+
+        grid.querySelectorAll('.crop-card').forEach((card) => {
+          card.addEventListener('click', () => {
+            window.location.href = `/advice.html?crop_id=${card.dataset.id}`;
+          });
+        });
+      } catch (err) {
+        loadingState.style.display = 'none';
+        errorState.textContent = err.message || 'Could not load crops.';
+        errorState.style.display = 'block';
+      }
+    }
+
+    loadCrops();
+  </script>
+</body>
+</html>

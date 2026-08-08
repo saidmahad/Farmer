@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farming Advice · Beeraha Agricultural Advisor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="topnav" id="nav"></nav>
+
+  <div class="page">
+    <a href="/crops.html" class="back-link">&larr; Choose a different crop</a>
+
+    <div id="loadingState" class="loading-state">Loading advice…</div>
+    <div id="errorState" class="empty-state" style="display:none;"></div>
+
+    <div id="content" style="display:none;">
+      <div class="advice-hero">
+        <h1 id="cropTitle"></h1>
+        <div class="crop-local" id="cropLocal"></div>
+        <span class="advice-source-tag" id="sourceTag"></span>
+      </div>
+
+      <h2>Advisory summary</h2>
+      <div class="advice-narrative" id="narrative"></div>
+
+      <h2>Detail</h2>
+      <div class="detail-grid">
+        <div class="detail-card planting">
+          <div class="detail-label">Planting method</div>
+          <p id="planting"></p>
+        </div>
+        <div class="detail-card irrigation">
+          <div class="detail-label">Irrigation schedule</div>
+          <p id="irrigation"></p>
+        </div>
+        <div class="detail-card fertilizer">
+          <div class="detail-label">Fertilizer plan</div>
+          <p id="fertilizer"></p>
+        </div>
+      </div>
+
+      <div class="meta-row">
+        <span><strong>Common pests:</strong> <span id="pests"></span></span>
+        <span><strong>Days to harvest:</strong> <span id="harvest"></span></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script>
+    Auth.requireAuth();
+    renderNav('nav');
+
+    const params = new URLSearchParams(window.location.search);
+    const cropId = params.get('crop_id');
+
+    async function loadAdvice() {
+      const loadingState = document.getElementById('loadingState');
+      const errorState = document.getElementById('errorState');
+      const content = document.getElementById('content');
+
+      if (!cropId) {
+        loadingState.style.display = 'none';
+        errorState.textContent = 'No crop selected.';
+        errorState.style.display = 'block';
+        return;
+      }
+
+      try {
+        const data = await Api.getAdvice(cropId);
+        loadingState.style.display = 'none';
+
+        document.getElementById('cropTitle').textContent = data.crop.crop_name;
+        document.getElementById('cropLocal').textContent =
+          [data.crop.local_name, data.crop.season].filter(Boolean).join(' · ');
+        document.getElementById('sourceTag').textContent =
+          data.source === 'ai' ? 'AI-enhanced advisory' : 'Advisory from crop database';
+
+        document.getElementById('narrative').textContent = data.advice;
+        document.getElementById('planting').textContent = data.fields.planting_method;
+        document.getElementById('irrigation').textContent = data.fields.irrigation;
+        document.getElementById('fertilizer').textContent = data.fields.fertilizer;
+        document.getElementById('pests').textContent = data.fields.common_pests || '—';
+        document.getElementById('harvest').textContent = data.fields.days_to_harvest || '—';
+
+        content.style.display = 'block';
+      } catch (err) {
+        loadingState.style.display = 'none';
+        errorState.textContent = err.message || 'Could not load advice.';
+        errorState.style.display = 'block';
+      }
+    }
+
+    loadAdvice();
+  </script>
+</body>
+</html>

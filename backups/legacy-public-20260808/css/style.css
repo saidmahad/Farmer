@@ -1,0 +1,524 @@
+/* ============================================================
+   Agricultural Advisory System — Design tokens
+   Restyled to match the "FarmerAI" Figma agricultural design
+   system: primary green #2E7D32, harvest yellow #F6C945,
+   info blue #1E88E5, and the Figma neutral + radius + shadow
+   scales. The variable architecture in :root is preserved — the
+   role variables below simply point at the new palette, and new
+   Figma tokens are added alongside them.
+   ============================================================ */
+:root {
+  /* Brand palette (from Figma globals.css) */
+  --primary-green: #2e7d32;
+  --primary-green-hover: #43a047;
+  --harvest-yellow: #f6c945;
+  --info-blue: #1e88e5;
+  --success-green: #2e7d32;
+  --warning-yellow: #f6c445;
+  --danger-red: #d32f2f;
+
+  /* Neutral scale (from Figma) */
+  --neutral-900: #0b0f14;
+  --neutral-800: #12171d;
+  --neutral-700: #1c232b;
+  --neutral-600: #2a3340;
+  --neutral-500: #5b6977;
+  --neutral-400: #c5cfd8;
+  --neutral-300: #e6edf3;
+  --neutral-100: #f6f9fc;
+
+  /* Role variables — original names kept, values follow Figma */
+  --soil: var(--neutral-700);      /* outline text / borders */
+  --soil-dark: var(--neutral-900); /* headings */
+  --clay: var(--warning-yellow);   /* amber accent (fertilizer, swatches) */
+  --grain: var(--harvest-yellow);  /* yellow accent */
+  --grain-light: #ffffff;          /* text on primary / dark hero */
+  --leaf: var(--primary-green);    /* primary action */
+  --leaf-light: var(--primary-green-hover);
+  --canal: var(--info-blue);       /* links, focus rings, irrigation */
+  --cream: var(--neutral-100);     /* page background */
+  --paper: #ffffff;                /* card / surface background */
+  --ink: var(--neutral-900);       /* body text */
+  --ink-soft: var(--neutral-500);  /* muted text */
+  --line: var(--neutral-300);      /* soft hairline borders */
+  --border: var(--neutral-400);    /* stronger borders (inputs) */
+  --error: var(--danger-red);
+
+  /* Typography — Figma renders everything in Inter */
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+
+  /* Radius + elevation scales (Figma) */
+  --radius-sm: 0.75rem;  /* 12px */
+  --radius-md: 1rem;     /* 16px */
+  --radius-lg: 1.5rem;   /* 24px */
+  --radius-xl: 2rem;     /* 32px */
+  --radius: var(--radius-sm);
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Glass effects (Figma) */
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-backdrop: blur(16px);
+
+  /* Brand leaf glyph — lucide "leaf" icon as a data URI */
+  --leaf-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z'/%3E%3Cpath d='M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12'/%3E%3C/svg%3E");
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--soil-dark);
+  letter-spacing: -0.01em;
+  margin: 0 0 0.4em;
+}
+h1 { font-size: 1.75rem; }
+h2 { font-size: 1.375rem; }
+h3 { font-size: 1.125rem; }
+p { margin: 0 0 1em; color: var(--ink-soft); }
+a { color: var(--leaf); }
+
+/* ---------- Top nav ---------- */
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--soil-dark);
+  text-decoration: none;
+}
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background-color: var(--leaf);
+  background-image: var(--leaf-icon);
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 2px 6px rgba(46, 125, 50, 0.35);
+  flex-shrink: 0;
+}
+.nav-actions { display: flex; align-items: center; gap: 10px; }
+.nav-user { font-size: 0.9rem; font-weight: 500; color: var(--ink-soft); margin-right: 4px; }
+
+/* ---------- Buttons (Figma: rounded, clay-like soft shadow) ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.08s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.btn:active { transform: translateY(1px); }
+.btn-primary {
+  background: linear-gradient(180deg, var(--primary-green-hover) 0%, var(--leaf) 100%);
+  color: var(--grain-light);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    0 8px 18px -6px rgba(46, 125, 50, 0.6);
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(180deg, #4caf50 0%, var(--leaf) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    0 12px 22px -8px rgba(46, 125, 50, 0.7);
+}
+.btn-outline {
+  background: var(--paper);
+  border-color: var(--border);
+  color: var(--soil-dark);
+}
+.btn-outline:hover { background: var(--neutral-100); }
+.btn-block { width: 100%; }
+.btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none; }
+
+/* ---------- Layout shells ---------- */
+.page { max-width: 1080px; margin: 0 auto; padding: 44px 24px 80px; }
+.center-shell {
+  min-height: calc(100vh - 63px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* ---------- Auth pages ----------
+   The Figma auth screen is a glass card floating over a field
+   photo. We reproduce it with a layered green "field" gradient
+   (no external image needed, and CSP-safe) + frosted glass card. */
+.auth-body {
+  background-color: #1a5c1f;
+  background-image:
+    radial-gradient(1000px 520px at 85% -5%, rgba(246, 201, 69, 0.3), transparent 60%),
+    radial-gradient(820px 460px at -8% 108%, rgba(30, 136, 229, 0.28), transparent 55%),
+    linear-gradient(150deg, #1a5c1f 0%, #2e7d32 38%, #3e9041 62%, #17441d 100%);
+  background-attachment: fixed;
+}
+.auth-body .topnav {
+  background: transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+.auth-body .brand { color: #ffffff; }
+.auth-body .brand-mark { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 4px 14px rgba(0, 0, 0, 0.3); }
+.auth-body .btn-outline { background: transparent; border-color: rgba(255, 255, 255, 0.45); color: #ffffff; }
+.auth-body .btn-outline:hover { background: rgba(255, 255, 255, 0.12); border-color: rgba(255, 255, 255, 0.7); }
+
+.auth-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 36px;
+  color: #ffffff;
+}
+.auth-logo {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 16px; /* Figma rounded-2xl */
+  background-color: var(--leaf);
+  background-image: var(--leaf-icon);
+  background-size: 32px 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 10px 24px -8px rgba(46, 125, 50, 0.8);
+}
+.auth-title {
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.7rem;
+  color: #ffffff;
+  margin: 0 0 4px;
+}
+.auth-card h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin: 6px 0 6px;
+}
+.auth-eyebrow {
+  text-align: center;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--grain);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.auth-sub {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+  margin-bottom: 26px;
+}
+
+.field { margin-bottom: 18px; }
+.field label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 6px;
+}
+.field input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.1);
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  color: #ffffff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+.field input::placeholder { color: rgba(255, 255, 255, 0.55); }
+.field input:focus {
+  outline: none;
+  border-color: var(--grain);
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 0 0 3px rgba(246, 201, 69, 0.25);
+}
+.field-hint { font-size: 0.78rem; color: rgba(255, 255, 255, 0.6); margin-top: 5px; }
+
+.form-footer {
+  margin-top: 22px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+.form-footer a { color: var(--grain); font-weight: 600; }
+
+.alert {
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  margin-bottom: 18px;
+  display: none;
+}
+.alert.show { display: block; }
+.alert-error {
+  background: rgba(211, 47, 47, 0.2);
+  border: 1px solid rgba(211, 47, 47, 0.55);
+  color: #ffd9d9;
+}
+.alert-success {
+  background: rgba(46, 125, 50, 0.18);
+  border: 1px solid rgba(46, 125, 50, 0.5);
+  color: #d7f2d9;
+}
+
+/* ---------- Page header ---------- */
+.page-header { margin-bottom: 34px; }
+.page-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--leaf);
+  background: rgba(46, 125, 50, 0.1);
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+.page-header h1 { font-size: 1.9rem; }
+.page-header p { font-size: 1rem; max-width: 60ch; }
+
+/* ---------- Crop grid (Figma crop-recommendation cards) ---------- */
+.crop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 22px;
+}
+.crop-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  padding: 0;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.crop-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(46, 125, 50, 0.35);
+}
+.crop-card:focus-visible { outline: 3px solid rgba(30, 136, 229, 0.5); outline-offset: 2px; }
+.crop-media {
+  height: 128px; /* Figma h-32 image band */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #ffffff;
+}
+.crop-media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.18), transparent 45%);
+  pointer-events: none;
+}
+.crop-media-letter {
+  position: relative;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 2rem;
+  opacity: 0.95;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.crop-season {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  padding: 3px 9px;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.crop-card-body { padding: 16px 16px 18px; }
+.crop-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--soil-dark);
+  margin-bottom: 3px;
+}
+.crop-local { font-size: 0.85rem; color: var(--ink-soft); margin: 0; }
+
+/* ---------- Advice page ---------- */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-decoration: none;
+  margin-bottom: 22px;
+}
+.back-link:hover { color: var(--leaf); }
+
+.advice-hero {
+  background:
+    radial-gradient(480px 260px at 88% 20%, rgba(246, 201, 69, 0.2), transparent 65%),
+    linear-gradient(135deg, #1b5e20 0%, #2e7d32 55%, #2f5233 100%);
+  color: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 34px 32px;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+.advice-hero::after {
+  content: '';
+  position: absolute;
+  right: -70px;
+  bottom: -70px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(246, 201, 69, 0.22), transparent 70%);
+}
+.advice-hero h1 { color: #ffffff; font-size: 1.8rem; position: relative; }
+.advice-hero .crop-local { color: rgba(255, 255, 255, 0.78); position: relative; margin: 0; }
+.advice-source-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(246, 201, 69, 0.16);
+  border: 1px solid rgba(246, 201, 69, 0.3);
+  color: var(--grain);
+  margin-top: 14px;
+  position: relative;
+}
+
+.advice-narrative {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 26px 28px;
+  margin-bottom: 28px;
+  white-space: pre-line;
+  font-size: 1rem;
+  color: var(--ink);
+  line-height: 1.75;
+  box-shadow: var(--shadow-sm);
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.detail-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+}
+.detail-card.planting { background: #e8f5e9; border-color: #b6d7b8; }
+.detail-card.planting .detail-label { color: var(--leaf); }
+.detail-card.irrigation { background: #e3f2fd; border-color: #a8cffa; }
+.detail-card.irrigation .detail-label { color: #1565c0; }
+.detail-card.fertilizer { background: #fff8e1; border-color: #ffe082; }
+.detail-card.fertilizer .detail-label { color: #b48a00; }
+.detail-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.detail-card p { margin: 0; font-size: 0.95rem; color: var(--ink); }
+
+.meta-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin-bottom: 8px;
+}
+.meta-row strong { color: var(--soil-dark); }
+
+.loading-state, .empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--ink-soft);
+}
+
+/* ---------- Utility ---------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .auth-card { padding: 30px 22px; }
+  .page { padding: 32px 16px 60px; }
+  .topnav { padding: 14px 18px; }
+  .page-header h1 { font-size: 1.6rem; }
+}
