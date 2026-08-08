@@ -47,7 +47,10 @@ app.use(
         styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
         fontSrc: ["'self'", 'https://fonts.gstatic.com'],
         scriptSrc: ["'self'", "'unsafe-inline'"],
-        imgSrc: ["'self'", 'data:', 'https://images.unsplash.com', 'https://img.youtube.com']
+        // upload.wikimedia.org hosts the verified Commons crop photos used by
+        // PlantExplorer (every image's filename describes its crop, so a URL
+        // is auditable against the crop name — unlike opaque Unsplash IDs).
+        imgSrc: ["'self'", 'data:', 'https://images.unsplash.com', 'https://img.youtube.com', 'https://upload.wikimedia.org']
       }
     }
   })

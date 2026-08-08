@@ -22,6 +22,11 @@ let server;
 let baseUrl;
 
 test.before(async () => {
+  // Run the real migration chain against the isolated test DB first, so
+  // the test environment matches a fresh production deploy (full
+  // plant/disease/video/crops catalog seeded, exactly as `npm start` does).
+  require('../db/migrations/run');
+
   // Build a minimal app instance mirroring server.js, without starting
   // on a fixed port (each test run binds to an ephemeral port).
   const express = require('express');
@@ -42,6 +47,9 @@ test.before(async () => {
 
 test.after(() => {
   server.close();
+  // Close the singleton better-sqlite3 connection before removing the
+  // file — otherwise the file stays locked on Windows (EBUSY).
+  require('../db').close();
   if (fs.existsSync(TEST_DB)) fs.unlinkSync(TEST_DB);
   for (const ext of ['-wal', '-shm']) {
     const f = TEST_DB + ext;
@@ -120,19 +128,23 @@ test('GET /api/crops requires authentication', async () => {
   assert.ok(body.error);
 });
 
-test('GET /api/crops returns the seeded crop list when authenticated', async () => {
+test('GET /api/crops returns the seeded catalog crop list when authenticated', async () => {
   const login = await post('/api/login', { email: 'amina@example.com', password: 'secure1234' });
   const { status, body } = await get('/api/crops', login.body.token);
   assert.equal(status, 200);
-  assert.equal(body.crops.length, 4);
-  const names = body.crops.map((c) => c.crop_name).sort();
-  assert.deepEqual(names, ['Basal', 'Galley', 'Qamadi', 'Yaanyo']);
+  // The crops table is mirrored from the verified plant catalog (migration
+  // 007) — 64 crops today. Requiring >= 64 keeps the test resilient to
+  // future catalog additions.
+  assert.ok(body.crops.length >= 64, `expected >= 64 crops, got ${body.crops.length}`);
+  const names = body.crops.map((c) => c.crop_name);
+  assert.ok(names.includes('Rice (Paddy)'), 'catalog crop should be listed');
 });
 
 test('GET /api/advice returns template advice for a valid crop', async () => {
   const login = await post('/api/login', { email: 'amina@example.com', password: 'secure1234' });
   const crops = await get('/api/crops', login.body.token);
-  const cropId = crops.body.crops[0].id;
+  const crop = crops.body.crops.find((c) => c.crop_name === 'Rice (Paddy)') || crops.body.crops[0];
+  const cropId = crop.id;
 
   const { status, body } = await get(`/api/advice?crop_id=${cropId}`, login.body.token);
   assert.equal(status, 200);

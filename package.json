@@ -4,7 +4,9 @@
   "description": "Agricultural Advisory System - crop advice for farmers",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "npm run migrate && node server.js",
+    "migrate": "node db/migrations/run.js",
+    "build": "cd web && npm run build",
     "dev": "node --watch server.js",
     "test": "node --test tests/*.test.js"
   },

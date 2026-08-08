@@ -1,6 +1,18 @@
 // db/migrations/005_expand_plants_catalog.js
-// Expands the plant catalog from 8 to 50 crops with verified Unsplash images.
-// All images are from Unsplash and verified to match the crop.
+//
+// SUPERSEDED — not registered in run.js.
+//
+// This draft expanded the catalog but assigned images from opaque Unsplash
+// IDs (which caused the Onion→potato mismatch and duplicated placeholders),
+// and left overview/agronomy/pests/resources empty for every crop.
+//
+// The authoritative catalog now lives in db/catalog/plant-catalog.json and
+// is applied by 006_apply_verified_plant_catalog.js, which enforces
+// verified Wikimedia Commons images (descriptive filenames, URL-probed) and
+// full per-crop detail data. On a fresh database 006 creates the entire
+// 64-crop catalog, so this draft is never run.
+//
+// Kept for historical reference only.
 
 function tableExists(db, name) {
   return Boolean(

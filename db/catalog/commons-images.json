@@ -1,0 +1,258 @@
+{
+  "rice": {
+    "file": "File:Oryza sativa.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Oryza_sativa.jpg"
+  },
+  "wheat": {
+    "file": "File:Wheat field.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Wheat_field.jpg"
+  },
+  "maize": {
+    "file": "File:Corncobs.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Corncobs.jpg/960px-Corncobs.jpg"
+  },
+  "pearl_millet": {
+    "file": "File:Pennisetum glaucum.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pennisetum_glaucum.jpg/960px-Pennisetum_glaucum.jpg"
+  },
+  "finger_millet": {
+    "file": "File:Finger millet.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Finger_millet.jpg/960px-Finger_millet.jpg"
+  },
+  "barley": {
+    "file": "File:Barley.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Barley.jpg"
+  },
+  "oats": {
+    "file": "File:Avena sativa.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Avena_sativa.jpg"
+  },
+  "pigeon_pea": {
+    "file": "File:Pigeon peas.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Pigeon_peas.jpg/960px-Pigeon_peas.jpg"
+  },
+  "green_gram": {
+    "file": "File:Mung beans.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Mung_beans.jpg/960px-Mung_beans.jpg"
+  },
+  "black_gram": {
+    "file": "File:Black gram.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Black_gram.jpg/960px-Black_gram.jpg"
+  },
+  "cowpea": {
+    "file": "File:Cowpeas.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Cowpeas.jpg/960px-Cowpeas.jpg"
+  },
+  "groundnut": {
+    "file": "File:Peanuts.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Peanuts.jpg"
+  },
+  "soybean": {
+    "file": "File:Soybeans.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Soybeans.jpg"
+  },
+  "mustard": {
+    "file": "File:Brassica juncea.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Brassica_juncea.jpg/960px-Brassica_juncea.jpg"
+  },
+  "castor": {
+    "file": "File:Ricinus communis.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Ricinus_communis.jpg/960px-Ricinus_communis.jpg"
+  },
+  "linseed": {
+    "file": "File:Linum usitatissimum.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Linum_usitatissimum.jpg"
+  },
+  "tomato": {
+    "file": "File:Tomatoes.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Tomatoes.jpg/960px-Tomatoes.jpg"
+  },
+  "onion": {
+    "file": "File:Onions.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Onions.jpg/960px-Onions.jpg"
+  },
+  "potato": {
+    "file": "File:Potatoes.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Potatoes.jpg"
+  },
+  "garlic": {
+    "file": "File:Garlic.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Garlic.jpg/960px-Garlic.jpg"
+  },
+  "okra": {
+    "file": "File:Okra.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Okra.jpg/960px-Okra.jpg"
+  },
+  "brinjal": {
+    "file": "File:Eggplant.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Eggplant.jpg"
+  },
+  "cauliflower": {
+    "file": "File:Cauliflower.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Cauliflower.jpg"
+  },
+  "cabbage": {
+    "file": "File:Cabbage.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Cabbage.jpg"
+  },
+  "carrot": {
+    "file": "File:Carrots.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Carrots.jpg/960px-Carrots.jpg"
+  },
+  "peas": {
+    "file": "File:Peas.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Peas.jpg/960px-Peas.jpg"
+  },
+  "cucumber": {
+    "file": "File:Cucumbers.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cucumbers.jpg/960px-Cucumbers.jpg"
+  },
+  "bitter_gourd": {
+    "file": "File:Bitter melon.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bitter_melon.jpg/960px-Bitter_melon.jpg"
+  },
+  "bottle_gourd": {
+    "file": "File:Bottle gourd.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Bottle_gourd.jpg/960px-Bottle_gourd.jpg"
+  },
+  "pumpkin": {
+    "file": "File:Pumpkins.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Pumpkins.jpg"
+  },
+  "yam": {
+    "file": "File:Dioscorea alata.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Dioscorea_alata.jpg/960px-Dioscorea_alata.jpg"
+  },
+  "ginger": {
+    "file": "File:Ginger.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Ginger.jpg"
+  },
+  "cardamom": {
+    "file": "File:Cardamom.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Cardamom.jpg"
+  },
+  "black_pepper": {
+    "file": "File:Black pepper.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Black_pepper.jpg/960px-Black_pepper.jpg"
+  },
+  "coriander": {
+    "file": "File:Coriander.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Coriander.jpg"
+  },
+  "sugarcane": {
+    "file": "File:Sugarcane.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Sugarcane.jpg"
+  },
+  "cotton": {
+    "file": "File:Cotton plant.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cotton_plant.jpg"
+  },
+  "coffee": {
+    "file": "File:Coffee beans.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Coffee_beans.jpg/960px-Coffee_beans.jpg"
+  },
+  "rubber": {
+    "file": "File:Hevea brasiliensis.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Hevea_brasiliensis.jpg/960px-Hevea_brasiliensis.jpg"
+  },
+  "tobacco": {
+    "file": "File:Nicotiana tabacum.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Nicotiana_tabacum.jpg/960px-Nicotiana_tabacum.jpg"
+  },
+  "jute": {
+    "file": "File:Jute.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Jute.jpg"
+  },
+  "apple": {
+    "file": "File:Apples.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Apples.jpg/960px-Apples.jpg"
+  },
+  "banana": {
+    "file": "File:Bananas.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bananas.jpg/960px-Bananas.jpg"
+  },
+  "grapes": {
+    "file": "File:Grapes.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Grapes.jpg/960px-Grapes.jpg"
+  },
+  "mango": {
+    "file": "File:Mango.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Mango.jpg"
+  },
+  "orange": {
+    "file": "File:Oranges.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Oranges.jpg/960px-Oranges.jpg"
+  },
+  "papaya": {
+    "file": "File:Papaya.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Papaya.jpg/960px-Papaya.jpg"
+  },
+  "guava": {
+    "file": "File:Guava.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Guava.jpg/960px-Guava.jpg"
+  },
+  "pomegranate": {
+    "file": "File:Pomegranate.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Pomegranate.jpg/960px-Pomegranate.jpg"
+  },
+  "watermelon": {
+    "file": "File:Watermelons.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Watermelons.jpg/960px-Watermelons.jpg"
+  },
+  "lemon": {
+    "file": "File:Lemons.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Lemons.jpg/960px-Lemons.jpg"
+  },
+  "lentil": {
+    "file": "File:Lens culinaris.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Lens_culinaris.jpg/960px-Lens_culinaris.jpg"
+  },
+  "sesame": {
+    "file": "File:Sesamum indicum.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Sesamum_indicum.jpg"
+  },
+  "sunflower": {
+    "file": "File:Helianthus annuus.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Helianthus_annuus.jpg/960px-Helianthus_annuus.jpg"
+  },
+  "capsicum": {
+    "file": "File:Capsicum annuum.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Capsicum_annuum.jpg/960px-Capsicum_annuum.jpg"
+  },
+  "chili": {
+    "file": "File:Red chillies.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Red_chillies.jpg"
+  },
+  "ridge_gourd": {
+    "file": "File:Luffa acutangula.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Luffa_acutangula.jpg/960px-Luffa_acutangula.jpg"
+  },
+  "sweet_potato": {
+    "file": "File:Ipomoea batatas.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Ipomoea_batatas.jpg"
+  },
+  "turmeric": {
+    "file": "File:Curcuma longa.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Curcuma_longa.jpg/960px-Curcuma_longa.jpg"
+  },
+  "cumin": {
+    "file": "File:Cuminum cyminum.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Cuminum_cyminum.jpg/960px-Cuminum_cyminum.jpg"
+  },
+  "tea": {
+    "file": "File:Camellia sinensis.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Camellia_sinensis.jpg/960px-Camellia_sinensis.jpg"
+  },
+  "sisal": {
+    "file": "File:Sisal.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sisal.jpg/960px-Sisal.jpg"
+  },
+  "sorghum": {
+    "file": "File:Sorghum.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Sorghum.jpg"
+  },
+  "chickpea": {
+    "file": "File:Chickpea.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Chickpea.jpg"
+  }
+}

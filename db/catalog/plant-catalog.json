@@ -1,0 +1,2464 @@
+[
+  {
+    "slug": "rice",
+    "name": "Rice (Paddy)",
+    "scientific_name": "Oryza sativa",
+    "category": "Cereals",
+    "season": "Kharif",
+    "water_need": "High",
+    "climate": "Tropical",
+    "region": "Pan-India + Sub-Saharan Africa",
+    "duration": "120–150 days",
+    "expected_yield": "4.5 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹2,000–2,400/quintal",
+    "image_file": "File:Oryza sativa.jpg",
+    "description": "The world's most widely consumed staple cereal, grown in flooded fields with heavy water demand; India is the largest producer. Strong year-round demand and government procurement make it the anchor crop of most rice-belt farms.",
+    "overview": {
+      "family": "Poaceae", "lifecycle": "Annual",
+      "planting_depth": "2–3 cm (transplanted seedling)",
+      "spacing": "20x15 cm", "soil_type": "Clay loam, puddled", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Puddling in standing water; level field",
+      "seed_rate": "20–25 kg/acre",
+      "fertilizer": "NPK 120:60:40 kg/acre",
+      "irrigation": "Continuous flooding 2–5 cm during vegetative stage",
+      "intercropping": "Fish farming, duck rearing"
+    },
+    "pests": [
+      { "name": "Brown plant hopper", "severity": "High", "treatment": "Imidacloprid spray; drain field before application" },
+      { "name": "Stem borer", "severity": "Medium", "treatment": "Chlorpyrifos granules or pheromone traps" },
+      { "name": "Blast disease", "severity": "High", "treatment": "Tricyclazole or carbendazim at first signs" }
+    ],
+    "resources": [
+      { "title": "Rice Cultivation Guide", "type": "video", "duration": "15 min" },
+      { "title": "Water Management in Rice", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "wheat",
+    "name": "Wheat",
+    "scientific_name": "Triticum aestivum",
+    "category": "Cereals",
+    "season": "Rabi",
+    "water_need": "Medium",
+    "climate": "Temperate",
+    "region": "North + Central India",
+    "duration": "110–130 days",
+    "expected_yield": "3.2 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹2,100–2,400/quintal",
+    "image_file": "File:Wheat field.jpg",
+    "description": "The principal winter (rabi) cereal of the Indo-Gangetic plains, sown in cool dry weather and irrigated at critical growth stages. Strong procurement at minimum support price keeps the market dependable for growers.",
+    "overview": {
+      "family": "Poaceae", "lifecycle": "Annual",
+      "planting_depth": "3–5 cm", "spacing": "20 cm rows",
+      "soil_type": "Well-drained loamy", "ph_range": "6.0–7.5"
+    },
+    "agronomy": {
+      "land_prep": "2–3 ploughings with cultivator; level seedbed",
+      "seed_rate": "40–50 kg/acre",
+      "fertilizer": "NPK 120:60:40 kg/acre",
+      "irrigation": "5–6 critical-stage irrigations (CRI, tillering, flowering)",
+      "intercropping": "Gram, mustard, lentil"
+    },
+    "pests": [
+      { "name": "Aphids", "severity": "Medium", "treatment": "Dimethoate or imidacloprid spray" },
+      { "name": "Rust (yellow/stem)", "severity": "High", "treatment": "Propiconazole at first pustules; resistant varieties" },
+      { "name": "Termites", "severity": "Low", "treatment": "Chlorpyrifos soil treatment at sowing" }
+    ],
+    "resources": [
+      { "title": "Modern Wheat Farming", "type": "video", "duration": "12 min" },
+      { "title": "Disease Management in Wheat", "type": "article", "duration": "6 min read" }
+    ]
+  },
+  {
+    "slug": "maize",
+    "name": "Maize (Corn)",
+    "scientific_name": "Zea mays",
+    "category": "Cereals",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Pan-India + East Africa",
+    "duration": "90–120 days",
+    "expected_yield": "3.0 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹1,500–1,900/quintal",
+    "image_file": "File:Corncobs.jpg",
+    "description": "A versatile, fast-growing cereal used for human food, poultry and cattle feed, starch and ethanol industries. Its short season and wide climate tolerance make it a reliable kharif option for rainfed and irrigated farms alike.",
+    "overview": {
+      "family": "Poaceae", "lifecycle": "Annual",
+      "planting_depth": "4–5 cm", "spacing": "60–75x20–25 cm",
+      "soil_type": "Well-drained loam", "ph_range": "5.5–7.5"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing to 20–25 cm; break clods",
+      "seed_rate": "8–10 kg/acre",
+      "fertilizer": "NPK 150:75:60 kg/acre + 25 kg ZnSO4",
+      "irrigation": "Every 7–10 days; critical at tasseling and grain filling",
+      "intercropping": "Beans, cowpea, groundnut"
+    },
+    "pests": [
+      { "name": "Fall armyworm", "severity": "High", "treatment": "Emamectin benzoate; pheromone traps; early planting" },
+      { "name": "Stem borer", "severity": "Medium", "treatment": "Carbofuran granules in whorl" },
+      { "name": "Turcicum leaf blight", "severity": "Medium", "treatment": "Resistant hybrids + mancozeb spray" }
+    ],
+    "resources": [
+      { "title": "Maize Production Guide", "type": "video", "duration": "14 min" },
+      { "title": "Fall Armyworm IPM", "type": "article", "duration": "9 min read" }
+    ]
+  },
+  {
+    "slug": "sorghum",
+    "name": "Sorghum (Jowar)",
+    "scientific_name": "Sorghum bicolor",
+    "category": "Cereals",
+    "season": "Kharif",
+    "water_need": "Low",
+    "climate": "Tropical",
+    "region": "Maharashtra, Karnataka, Tamil Nadu",
+    "duration": "100–120 days",
+    "expected_yield": "2.0–2.5 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹2,500–3,400/quintal",
+    "image_file": "File:Sorghum.jpg",
+    "description": "Drought-tolerant cereal that thrives on low rainfall and poor soils, used for flatbreads (jowar roti), animal feed, and fodder. Its resilience makes it a lifeline in semi-arid regions and a rising export grain.",
+    "overview": {
+      "family": "Poaceae", "lifecycle": "Annual",
+      "planting_depth": "3–4 cm", "spacing": "45x15 cm",
+      "soil_type": "Sandy loam to black soil", "ph_range": "5.5–7.5"
+    },
+    "agronomy": {
+      "land_prep": "One deep ploughing + two harrowings",
+      "seed_rate": "4–5 kg/acre",
+      "fertilizer": "NPK 60:30:30 kg/acre",
+      "irrigation": "Mostly rainfed; 2–3 protective irrigations if dry",
+      "intercropping": "Pigeon pea, green gram"
+    },
+    "pests": [
+      { "name": "Shoot fly", "severity": "High", "treatment": "Seed treatment + timely sowing; carbofuran" },
+      { "name": "Stem borer", "severity": "Medium", "treatment": "Endosulfan/chlorantraniliprole spray" },
+      { "name": "Grain mold", "severity": "Medium", "treatment": "Harvest early; dry grain below 12% moisture" }
+    ],
+    "resources": [
+      { "title": "Sorghum Cultivation", "type": "video", "duration": "10 min" },
+      { "title": "Dryland Sorghum Practices", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "pearl_millet",
+    "name": "Pearl Millet (Bajra)",
+    "scientific_name": "Pennisetum glaucum",
+    "category": "Cereals",
+    "season": "Kharif",
+    "water_need": "Very Low",
+    "climate": "Tropical",
+    "region": "Rajasthan, Gujarat, Haryana",
+    "duration": "80–90 days",
+    "expected_yield": "1.5–2.0 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹2,500–3,000/quintal",
+    "image_file": "File:Pennisetum glaucum.jpg",
+    "description": "The most drought-hardy staple cereal, grown on sandy soils of hot arid regions with minimal water. Its grains are rich in iron and zinc, and growing health-food demand plus MSP procurement support prices.",
+    "overview": {
+      "family": "Poaceae", "lifecycle": "Annual",
+      "planting_depth": "3–4 cm", "spacing": "45x15 cm",
+      "soil_type": "Light sandy soils", "ph_range": "5.5–7.5"
+    },
+    "agronomy": {
+      "land_prep": "Shallow ploughing; avoid cloddy seedbed",
+      "seed_rate": "2.5–3.5 kg/acre",
+      "fertilizer": "NPK 40:20:20 kg/acre (split N)",
+      "irrigation": "Rainfed; 1–2 lifesaving irrigations in long dry spells",
+      "intercropping": "Pigeon pea, green gram, cluster bean"
+    },
+    "pests": [
+      { "name": "Downy mildew (green ear)", "severity": "High", "treatment": "Metalaxyl seed treatment; resistant hybrids" },
+      { "name": "Shoot fly", "severity": "Medium", "treatment": "Early sowing + carbofuran soil application" },
+      { "name": "Blast", "severity": "Medium", "treatment": "Tricyclazole spray on neck infection" }
+    ],
+    "resources": [
+      { "title": "Bajra Production Guide", "type": "video", "duration": "11 min" },
+      { "title": "Millets: The Climate-Smart Grains", "type": "article", "duration": "9 min read" }
+    ]
+  },
+  {
+    "slug": "finger_millet",
+    "name": "Finger Millet (Ragi)",
+    "scientific_name": "Eleusine coracana",
+    "category": "Cereals",
+    "season": "Kharif",
+    "water_need": "Low",
+    "climate": "Tropical",
+    "region": "Karnataka, Tamil Nadu, Uttarakhand",
+    "duration": "100–120 days",
+    "expected_yield": "1.5–2.0 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹3,500–4,000/quintal",
+    "image_file": "File:Finger millet.jpg",
+    "description": "A calcium-rich millet that stores exceptionally well for months, making it a food-security crop in hills and dry regions. Rising demand for gluten-free, nutritious grains is steadily lifting its market value.",
+    "overview": {
+      "family": "Poaceae", "lifecycle": "Annual",
+      "planting_depth": "2–3 cm", "spacing": "25x10 cm",
+      "soil_type": "Well-drained loams to red soils", "ph_range": "5.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Fine tilth; two harrowings",
+      "seed_rate": "4–5 kg/acre",
+      "fertilizer": "NPK 50:30:30 kg/acre",
+      "irrigation": "Rainfed; irrigate at tillering and earhead emergence if dry",
+      "intercropping": "Pigeon pea, cowpea"
+    },
+    "pests": [
+      { "name": "Blast (neck + finger)", "severity": "High", "treatment": "Tricyclazole spray at earhead emergence" },
+      { "name": "Pink stem borer", "severity": "Medium", "treatment": "Chlorpyrifos spray; remove stubbles" },
+      { "name": "Ragi earhead bug", "severity": "Low", "treatment": "Imidacloprid spray" }
+    ],
+    "resources": [
+      { "title": "Ragi Cultivation", "type": "video", "duration": "12 min" },
+      { "title": "Nutritional Millets Value Chain", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "barley",
+    "name": "Barley (Jau)",
+    "scientific_name": "Hordeum vulgare",
+    "category": "Cereals",
+    "season": "Rabi",
+    "water_need": "Low",
+    "climate": "Temperate",
+    "region": "Rajasthan, UP, Haryana, Punjab",
+    "duration": "120–150 days",
+    "expected_yield": "2.0–2.5 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹1,800–2,200/quintal",
+    "image_file": "File:Barley.jpg",
+    "description": "A short-duration, salt-tolerant winter cereal used for animal feed, malt and beer, and health foods. It suits marginal and saline soils where wheat struggles, with dependable malt-industry buyers.",
+    "overview": {
+      "family": "Poaceae", "lifecycle": "Annual",
+      "planting_depth": "4–5 cm", "spacing": "20–25 cm rows",
+      "soil_type": "Loam to sandy loam; tolerates salinity", "ph_range": "6.0–7.5"
+    },
+    "agronomy": {
+      "land_prep": "2 ploughings + planking",
+      "seed_rate": "35–40 kg/acre",
+      "fertilizer": "NPK 60:30:30 kg/acre",
+      "irrigation": "2–3 irrigations; avoid excess at maturity",
+      "intercropping": "Gram, lentil"
+    },
+    "pests": [
+      { "name": "Loose smut", "severity": "Medium", "treatment": "Seed treatment with carboxin + thiram" },
+      { "name": "Aphids", "severity": "Medium", "treatment": "Imidacloprid spray" },
+      { "name": "Leaf rust", "severity": "Low", "treatment": "Propiconazole spray" }
+    ],
+    "resources": [
+      { "title": "Barley for Malt and Feed", "type": "video", "duration": "10 min" },
+      { "title": "Growing Barley on Saline Soils", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "oats",
+    "name": "Oats",
+    "scientific_name": "Avena sativa",
+    "category": "Cereals",
+    "season": "Rabi",
+    "water_need": "Medium",
+    "climate": "Temperate",
+    "region": "Punjab, HP, J&K",
+    "duration": "100–120 days",
+    "expected_yield": "1.5–2.0 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹2,200–2,800/quintal",
+    "image_file": "File:Avena sativa.jpg",
+    "description": "A cool-season cereal grown for nutritious grain, breakfast foods, and as a high-quality green fodder cut multiple times. Health-food demand for oats keeps prices firm in urban markets.",
+    "overview": {
+      "family": "Poaceae", "lifecycle": "Annual",
+      "planting_depth": "3–4 cm", "spacing": "20 cm rows",
+      "soil_type": "Well-drained loam", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Fine seedbed; 2 harrowings",
+      "seed_rate": "40–50 kg/acre (grain); 60–70 kg/acre (fodder)",
+      "fertilizer": "NPK 50:30:30 kg/acre",
+      "irrigation": "3–4 irrigations in dry winters",
+      "intercropping": "Barley, peas"
+    },
+    "pests": [
+      { "name": "Aphids", "severity": "Medium", "treatment": "Dimethoate spray" },
+      { "name": "Crown rust", "severity": "Medium", "treatment": "Propiconazole; resistant varieties" },
+      { "name": "Loose smut", "severity": "Low", "treatment": "Seed dressing with carboxin" }
+    ],
+    "resources": [
+      { "title": "Oats for Grain and Fodder", "type": "video", "duration": "9 min" },
+      { "title": "Cool-Season Cereal Agronomy", "type": "article", "duration": "6 min read" }
+    ]
+  },
+  {
+    "slug": "chickpea",
+    "name": "Chickpea (Chana)",
+    "scientific_name": "Cicer arietinum",
+    "category": "Pulses",
+    "season": "Rabi",
+    "water_need": "Low",
+    "climate": "Temperate",
+    "region": "MP, Rajasthan, Maharashtra",
+    "duration": "100–120 days",
+    "expected_yield": "1.0–1.5 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "High",
+    "market_price": "₹5,000–6,500/quintal",
+    "image_file": "File:Chickpea.jpg",
+    "description": "India's most important pulse, grown on residual moisture after the monsoon; its nitrogen-fixing roots rebuild soil fertility. Strong dal demand and government procurement make it one of the most profitable rabi pulses.",
+    "overview": {
+      "family": "Fabaceae", "lifecycle": "Annual",
+      "planting_depth": "8–10 cm", "spacing": "30x10 cm",
+      "soil_type": "Well-drained loam to black cotton", "ph_range": "6.0–8.0"
+    },
+    "agronomy": {
+      "land_prep": "Zero/minimum tillage after paddy or deep ploughing",
+      "seed_rate": "30–35 kg/acre",
+      "fertilizer": "20:40:20 kg/acre NPK + rhizobium seed treatment",
+      "irrigation": "Rainfed; one irrigation at pod filling if available",
+      "intercropping": "Wheat, mustard, coriander"
+    },
+    "pests": [
+      { "name": "Gram pod borer", "severity": "High", "treatment": "HaNPV spray + pheromone traps; chlorantraniliprole" },
+      { "name": "Wilt", "severity": "High", "treatment": "Resistant varieties; seed treatment with Trichoderma" },
+      { "name": "Cutworm", "severity": "Low", "treatment": "Chlorpyrifos drenching at seedling stage" }
+    ],
+    "resources": [
+      { "title": "Chickpea Production", "type": "video", "duration": "13 min" },
+      { "title": "Pulse IPM Handbook", "type": "article", "duration": "10 min read" }
+    ]
+  },
+  {
+    "slug": "pigeon_pea",
+    "name": "Pigeon Pea (Arhar)",
+    "scientific_name": "Cajanus cajan",
+    "category": "Pulses",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Maharashtra, MP, Karnataka",
+    "duration": "150–180 days",
+    "expected_yield": "0.8–1.2 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "Medium",
+    "market_price": "₹6,000–7,500/quintal",
+    "image_file": "File:Pigeon peas.jpg",
+    "description": "A deep-rooted, drought-tolerant pulse grown as a kharif-to-rabi crop, widely intercropped with cereals; the standing crop also provides green fodder and firewood. Arhar dal commands premium prices due to perennial domestic shortage.",
+    "overview": {
+      "family": "Fabaceae", "lifecycle": "Perennial (grown as annual)",
+      "planting_depth": "4–5 cm", "spacing": "60–90x30 cm",
+      "soil_type": "Loam to black soils", "ph_range": "5.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing; ridges for drainage",
+      "seed_rate": "4–6 kg/acre",
+      "fertilizer": "25:50:25 kg/acre NPK + rhizobium",
+      "irrigation": "Rainfed; critical at flowering and pod development",
+      "intercropping": "Sorghum, pearl millet, maize"
+    },
+    "pests": [
+      { "name": "Pod borer (Helicoverpa)", "severity": "High", "treatment": "Pheromone traps + HaNPV + chlorantraniliprole" },
+      { "name": "Wilt", "severity": "High", "treatment": "Resistant varieties; seed dressing with Trichoderma" },
+      { "name": "Pod fly", "severity": "Medium", "treatment": "Neem-based sprays; early harvest" }
+    ],
+    "resources": [
+      { "title": "Arhar Intercropping Systems", "type": "video", "duration": "12 min" },
+      { "title": "Managing Pod Borer in Pulses", "type": "article", "duration": "9 min read" }
+    ]
+  },
+  {
+    "slug": "green_gram",
+    "name": "Green Gram (Moong)",
+    "scientific_name": "Vigna radiata",
+    "category": "Pulses",
+    "season": "Kharif",
+    "water_need": "Low",
+    "climate": "Tropical",
+    "region": "Pan-India",
+    "duration": "60–70 days",
+    "expected_yield": "0.6–0.8 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "High",
+    "market_price": "₹7,000–9,000/quintal",
+    "image_file": "File:Mung beans.jpg",
+    "description": "A short-duration, heat-tolerant pulse that fits into every cropping gap — as a catch crop, rotation crop, or green manure; its roots fix nitrogen for the following crop. Quick returns and firm dal prices make it a farmer favourite.",
+    "overview": {
+      "family": "Fabaceae", "lifecycle": "Annual",
+      "planting_depth": "4–5 cm", "spacing": "30x10 cm",
+      "soil_type": "Sandy loam", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "2 harrowings; fine tilth",
+      "seed_rate": "8–10 kg/acre",
+      "fertilizer": "20:40:20 kg/acre NPK + rhizobium",
+      "irrigation": "Rainfed; one irrigation at flowering if dry",
+      "intercropping": "Maize, sorghum, cotton"
+    },
+    "pests": [
+      { "name": "Yellow mosaic virus", "severity": "High", "treatment": "Resistant varieties; control whitefly vector" },
+      { "name": "Whitefly", "severity": "Medium", "treatment": "Yellow sticky traps; imidacloprid" },
+      { "name": "Pod borer", "severity": "Medium", "treatment": "Quinalphos spray at pod formation" }
+    ],
+    "resources": [
+      { "title": "Moong in Crop Rotation", "type": "video", "duration": "10 min" },
+      { "title": "Pulse Crop Economics", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "black_gram",
+    "name": "Black Gram (Urad)",
+    "scientific_name": "Vigna mungo",
+    "category": "Pulses",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "UP, MP, Maharashtra",
+    "duration": "75–90 days",
+    "expected_yield": "0.5–0.7 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "High",
+    "market_price": "₹8,000–10,000/quintal",
+    "image_file": "File:Black gram.jpg",
+    "description": "A premium pulse whose white-split form (urad dal) is essential in Indian kitchens; it thrives on heavy soils and fixes nitrogen. Persistent supply gaps keep wholesale prices among the highest of the pulses.",
+    "overview": {
+      "family": "Fabaceae", "lifecycle": "Annual",
+      "planting_depth": "4–5 cm", "spacing": "30x10 cm",
+      "soil_type": "Clay loam (heavy soils)", "ph_range": "6.5–7.5"
+    },
+    "agronomy": {
+      "land_prep": "Ploughing + laddering; conserve moisture",
+      "seed_rate": "8–10 kg/acre",
+      "fertilizer": "20:40:20 kg/acre NPK + rhizobium",
+      "irrigation": "Rainfed; 1–2 irrigations in dry spells",
+      "intercropping": "Cotton, maize, sugarcane"
+    },
+    "pests": [
+      { "name": "Yellow mosaic virus", "severity": "High", "treatment": "Resistant varieties; whitefly control" },
+      { "name": "Aphids", "severity": "Low", "treatment": "Dimethoate spray" },
+      { "name": "Leaf spot", "severity": "Medium", "treatment": "Mancozeb spray" }
+    ],
+    "resources": [
+      { "title": "Urad Cultivation", "type": "video", "duration": "9 min" },
+      { "title": "Heavy-Soil Pulse Farming", "type": "article", "duration": "6 min read" }
+    ]
+  },
+  {
+    "slug": "lentil",
+    "name": "Lentil (Masoor)",
+    "scientific_name": "Lens culinaris",
+    "category": "Pulses",
+    "season": "Rabi",
+    "water_need": "Low",
+    "climate": "Temperate",
+    "region": "UP, MP, Bihar",
+    "duration": "110–130 days",
+    "expected_yield": "0.8–1.0 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹5,500–7,000/quintal",
+    "image_file": "File:Lens culinaris.jpg",
+    "description": "A cool-season pulse grown on residual moisture, valued for its quick cooking and high protein; its straw is good animal feed. Steady demand in vegetarian markets and short duration make it a dependable rabi rotation crop.",
+    "overview": {
+      "family": "Fabaceae", "lifecycle": "Annual",
+      "planting_depth": "3–4 cm", "spacing": "25–30x5 cm",
+      "soil_type": "Well-drained loam", "ph_range": "6.0–8.0"
+    },
+    "agronomy": {
+      "land_prep": "Minimum tillage on residual moisture",
+      "seed_rate": "20–25 kg/acre",
+      "fertilizer": "15:40:20 kg/acre NPK + rhizobium",
+      "irrigation": "Rainfed; one irrigation at flowering if possible",
+      "intercropping": "Wheat, mustard"
+    },
+    "pests": [
+      { "name": "Wilt", "severity": "High", "treatment": "Resistant varieties; Trichoderma seed treatment" },
+      { "name": "Aphids", "severity": "Medium", "treatment": "Imidacloprid spray" },
+      { "name": "Pod borer", "severity": "Low", "treatment": "HaNPV spray" }
+    ],
+    "resources": [
+      { "title": "Lentil Farming", "type": "video", "duration": "8 min" },
+      { "title": "Rabi Pulses Package of Practices", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "cowpea",
+    "name": "Cowpea (Lobia)",
+    "scientific_name": "Vigna unguiculata",
+    "category": "Pulses",
+    "season": "Kharif",
+    "water_need": "Low",
+    "climate": "Tropical",
+    "region": "Rajasthan, Gujarat, UP",
+    "duration": "60–75 days",
+    "expected_yield": "0.5–0.8 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹4,000–5,500/quintal",
+    "image_file": "File:Cowpeas.jpg",
+    "description": "An extremely heat- and drought-tolerant legume used for grain, green pods as a vegetable, and fodder; it improves soil nitrogen in dryland rotations. A staple protein source in much of Africa with reliable regional demand.",
+    "overview": {
+      "family": "Fabaceae", "lifecycle": "Annual",
+      "planting_depth": "3–4 cm", "spacing": "30x15 cm",
+      "soil_type": "Sandy loam", "ph_range": "5.5–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Shallow ploughing; fine seedbed",
+      "seed_rate": "10–12 kg/acre",
+      "fertilizer": "20:40:20 kg/acre NPK + rhizobium",
+      "irrigation": "Rainfed; 1–2 irrigations if prolonged dry spell",
+      "intercropping": "Maize, sorghum, pearl millet"
+    },
+    "pests": [
+      { "name": "Aphids", "severity": "Medium", "treatment": "Imidacloprid spray" },
+      { "name": "Pod borer", "severity": "Medium", "treatment": "Quinalphos at podding" },
+      { "name": "Root-knot nematode", "severity": "Low", "treatment": "Crop rotation with cereals" }
+    ],
+    "resources": [
+      { "title": "Cowpea for Dryland Farming", "type": "video", "duration": "9 min" },
+      { "title": "Legume Nitrogen Fixation", "type": "article", "duration": "6 min read" }
+    ]
+  },
+  {
+    "slug": "groundnut",
+    "name": "Groundnut",
+    "scientific_name": "Arachis hypogaea",
+    "category": "Oil Seeds",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Gujarat, AP, Karnataka",
+    "duration": "100–130 days",
+    "expected_yield": "1.2–1.5 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹5,000–6,000/quintal",
+    "image_file": "File:Peanuts.jpg",
+    "description": "A nitrogen-fixing oilseed and confectionery crop whose pods mature underground; it also improves soil for the next crop. Edible-oil demand, peanut butter processing, and export markets give it diversified buyers.",
+    "overview": {
+      "family": "Fabaceae", "lifecycle": "Annual",
+      "planting_depth": "5 cm", "spacing": "30x10 cm",
+      "soil_type": "Sandy loam", "ph_range": "6.0–7.5"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing; raised bed / ridge planting",
+      "seed_rate": "40–50 kg/acre (kernels)",
+      "fertilizer": "NPK 25:50:25 + 200 kg gypsum/acre at flowering",
+      "irrigation": "Critical at pegging and pod development",
+      "intercropping": "Sunflower, castor, pigeon pea"
+    },
+    "pests": [
+      { "name": "Tikka leaf spot", "severity": "High", "treatment": "Mancozeb / chlorothalonil spray" },
+      { "name": "Rust", "severity": "Medium", "treatment": "Hexaconazole spray" },
+      { "name": "White grub", "severity": "Medium", "treatment": "Soil application of chlorpyrifos" }
+    ],
+    "resources": [
+      { "title": "Groundnut Production", "type": "video", "duration": "11 min" },
+      { "title": "Gypsum and Pod Development", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "soybean",
+    "name": "Soybean",
+    "scientific_name": "Glycine max",
+    "category": "Oil Seeds",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "MP, Maharashtra, Rajasthan",
+    "duration": "90–100 days",
+    "expected_yield": "1.0–1.2 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹4,500–5,500/quintal",
+    "image_file": "File:Soybeans.jpg",
+    "description": "The world's leading oilseed and protein crop, crushed for edible oil with the de-oiled cake used in poultry and cattle feed. Strong crushing-industry demand in central India makes it a major kharif cash rotation.",
+    "overview": {
+      "family": "Fabaceae", "lifecycle": "Annual",
+      "planting_depth": "3–4 cm", "spacing": "30–45x5–10 cm",
+      "soil_type": "Well-drained loam (black soils)", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing + 2 harrowings",
+      "seed_rate": "30–35 kg/acre",
+      "fertilizer": "20:60:20 kg/acre NPK + rhizobium",
+      "irrigation": "Rainfed; critical at flowering and pod filling",
+      "intercropping": "Sole crop; rotate with wheat/chickpea"
+    },
+    "pests": [
+      { "name": "Girdle beetle", "severity": "High", "treatment": "Imidacloprid/chlorantraniliprole spray" },
+      { "name": "Tobacco caterpillar", "severity": "Medium", "treatment": "Handpicking + HaNPV spray" },
+      { "name": "Yellow mosaic", "severity": "High", "treatment": "Resistant varieties; whitefly control" }
+    ],
+    "resources": [
+      { "title": "Soybean Production Systems", "type": "video", "duration": "14 min" },
+      { "title": "Soybean Pest Management", "type": "article", "duration": "9 min read" }
+    ]
+  },
+  {
+    "slug": "mustard",
+    "name": "Mustard (Sarson)",
+    "scientific_name": "Brassica juncea",
+    "category": "Oil Seeds",
+    "season": "Rabi",
+    "water_need": "Low",
+    "climate": "Temperate",
+    "region": "Rajasthan, Haryana, UP",
+    "duration": "110–140 days",
+    "expected_yield": "0.8–1.0 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹4,800–5,800/quintal",
+    "image_file": "File:Brassica juncea.jpg",
+    "description": "India's primary winter oilseed, with bright yellow flowers and seed crushed into cooking oil; the de-oiled cake feeds livestock. Its short season fits perfectly between kharif harvest and summer, with MSP support each year.",
+    "overview": {
+      "family": "Brassicaceae", "lifecycle": "Annual",
+      "planting_depth": "2–3 cm", "spacing": "30x10 cm",
+      "soil_type": "Well-drained loam", "ph_range": "6.0–7.5"
+    },
+    "agronomy": {
+      "land_prep": "Fine seedbed after paddy/wheat",
+      "seed_rate": "2–3 kg/acre",
+      "fertilizer": "60:30:30 kg/acre NPK + 20 kg sulfur",
+      "irrigation": "2–3 irrigations: flowering and siliqua filling",
+      "intercropping": "Wheat, chickpea, lentil"
+    },
+    "pests": [
+      { "name": "Aphids", "severity": "High", "treatment": "Imidacloprid/dimethoate at flowering" },
+      { "name": "White rust", "severity": "Medium", "treatment": "Metalaxyl + mancozeb spray" },
+      { "name": "Powdery mildew", "severity": "Low", "treatment": "Sulfur spray" }
+    ],
+    "resources": [
+      { "title": "Mustard Farming", "type": "video", "duration": "11 min" },
+      { "title": "Rapeseed-Mustard Agronomy", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "sesame",
+    "name": "Sesame (Til)",
+    "scientific_name": "Sesamum indicum",
+    "category": "Oil Seeds",
+    "season": "Kharif",
+    "water_need": "Low",
+    "climate": "Tropical",
+    "region": "Gujarat, MP, Rajasthan",
+    "duration": "80–90 days",
+    "expected_yield": "0.4–0.6 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "High",
+    "market_price": "₹12,000–15,000/quintal",
+    "image_file": "File:Sesamum indicum.jpg",
+    "description": "A heat-tolerant oilseed with premium golden oil and a large export market for seeds and tahini; it matures quickly on light soils. High per-quintal prices reward careful harvest and drying.",
+    "overview": {
+      "family": "Pedaliaceae", "lifecycle": "Annual",
+      "planting_depth": "2–3 cm", "spacing": "30x10 cm",
+      "soil_type": "Well-drained sandy loam", "ph_range": "5.5–8.0"
+    },
+    "agronomy": {
+      "land_prep": "Shallow ploughing; fine tilth",
+      "seed_rate": "1.5–2 kg/acre",
+      "fertilizer": "30:20:20 kg/acre NPK",
+      "irrigation": "Rainfed; 1–2 lifesaving irrigations",
+      "intercropping": "Groundnut, pigeon pea"
+    },
+    "pests": [
+      { "name": "Leaf roller", "severity": "Medium", "treatment": "Quinalphos spray" },
+      { "name": "Gall fly", "severity": "Medium", "treatment": "Remove and destroy infested shoots" },
+      { "name": "Phyllody", "severity": "High", "treatment": "Roguing diseased plants; control leafhoppers" }
+    ],
+    "resources": [
+      { "title": "Sesame for Export Markets", "type": "video", "duration": "10 min" },
+      { "title": "Sesame Post-Harvest Handling", "type": "article", "duration": "6 min read" }
+    ]
+  },
+  {
+    "slug": "sunflower",
+    "name": "Sunflower",
+    "scientific_name": "Helianthus annuus",
+    "category": "Oil Seeds",
+    "season": "Rabi",
+    "water_need": "Medium",
+    "climate": "Temperate",
+    "region": "Karnataka, AP, Maharashtra",
+    "duration": "90–100 days",
+    "expected_yield": "0.8–1.0 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "Medium",
+    "market_price": "₹6,000–7,500/quintal",
+    "image_file": "File:Helianthus annuus.jpg",
+    "description": "A short-duration oilseed with light, healthy oil and bee-attracting flowers that aid pollination of nearby crops. Its quick maturity suits multiple sowing windows, though yields demand good management.",
+    "overview": {
+      "family": "Asteraceae", "lifecycle": "Annual",
+      "planting_depth": "3–5 cm", "spacing": "60x30 cm",
+      "soil_type": "Well-drained loam", "ph_range": "6.0–7.5"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing; ridges",
+      "seed_rate": "2–2.5 kg/acre",
+      "fertilizer": "40:40:20 kg/acre NPK",
+      "irrigation": "Critical at flowering and seed filling",
+      "intercropping": "Groundnut, pigeon pea"
+    },
+    "pests": [
+      { "name": "Head borer", "severity": "High", "treatment": "Chlorantraniliprole at bud stage" },
+      { "name": "Powdery mildew", "severity": "Medium", "treatment": "Sulfur spray" },
+      { "name": "Downy mildew", "severity": "Medium", "treatment": "Metalaxyl seed treatment" }
+    ],
+    "resources": [
+      { "title": "Sunflower Cultivation", "type": "video", "duration": "10 min" },
+      { "title": "Oilseed Economics", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "castor",
+    "name": "Castor",
+    "scientific_name": "Ricinus communis",
+    "category": "Oil Seeds",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Gujarat, Rajasthan, AP",
+    "duration": "120–150 days",
+    "expected_yield": "1.0–1.5 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹4,500–5,500/quintal",
+    "image_file": "File:Ricinus communis.jpg",
+    "description": "An industrial oilseed whose non-edible oil feeds lubricants, paints, and cosmetics; India is the world's leading producer and exporter. Contract buying and export demand give it stable, often high, returns on marginal land.",
+    "overview": {
+      "family": "Euphorbiaceae", "lifecycle": "Annual",
+      "planting_depth": "5–8 cm", "spacing": "90–120x60 cm",
+      "soil_type": "Deep well-drained black/loamy soils", "ph_range": "5.5–7.5"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing; ridges and furrows",
+      "seed_rate": "2–3 kg/acre",
+      "fertilizer": "30:30:30 kg/acre NPK",
+      "irrigation": "Rainfed; critical at flowering and capsule set",
+      "intercropping": "Groundnut, pigeon pea, green gram"
+    },
+    "pests": [
+      { "name": "Capsule borer", "severity": "High", "treatment": "Chlorantraniliprole spray" },
+      { "name": "Semi-looper", "severity": "Medium", "treatment": "Quinalphos spray" },
+      { "name": "Wilt", "severity": "Medium", "treatment": "Resistant varieties; seed treatment" }
+    ],
+    "resources": [
+      { "title": "Castor Export Value Chain", "type": "video", "duration": "11 min" },
+      { "title": "Industrial Oilseed Crops", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "linseed",
+    "name": "Linseed (Flax)",
+    "scientific_name": "Linum usitatissimum",
+    "category": "Oil Seeds",
+    "season": "Rabi",
+    "water_need": "Low",
+    "climate": "Temperate",
+    "region": "MP, Rajasthan, UP",
+    "duration": "100–120 days",
+    "expected_yield": "0.5–0.7 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹5,000–6,000/quintal",
+    "image_file": "File:Linum usitatissimum.jpg",
+    "description": "A dual-purpose winter crop yielding omega-3-rich seeds (flaxseed) for health foods and oil, plus fiber for textiles. Rising superfood demand is expanding its market beyond traditional oilseed buyers.",
+    "overview": {
+      "family": "Linaceae", "lifecycle": "Annual",
+      "planting_depth": "2–3 cm", "spacing": "25x5 cm",
+      "soil_type": "Well-drained loam", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Fine seedbed; 2 harrowings",
+      "seed_rate": "20–25 kg/acre",
+      "fertilizer": "40:30:20 kg/acre NPK",
+      "irrigation": "2–3 irrigations in dry winters",
+      "intercropping": "Chickpea, mustard"
+    },
+    "pests": [
+      { "name": "Aphids", "severity": "Medium", "treatment": "Dimethoate spray" },
+      { "name": "Rust", "severity": "Medium", "treatment": "Resistant varieties; propiconazole" },
+      { "name": "Wilt", "severity": "Low", "treatment": "Seed treatment with Trichoderma" }
+    ],
+    "resources": [
+      { "title": "Flaxseed for Health Markets", "type": "video", "duration": "9 min" },
+      { "title": "Omega-3 Oilseed Crops", "type": "article", "duration": "6 min read" }
+    ]
+  },
+  {
+    "slug": "tomato",
+    "name": "Tomato",
+    "scientific_name": "Solanum lycopersicum",
+    "category": "Vegetables",
+    "season": "All Season",
+    "water_need": "Medium",
+    "climate": "Temperate",
+    "region": "Pan India",
+    "duration": "90–120 days",
+    "expected_yield": "15–20 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "Very High",
+    "market_price": "₹800–1,500/quintal",
+    "image_file": "File:Tomatoes.jpg",
+    "description": "The highest-value vegetable in most markets, grown year-round under irrigation with staking and regular pest scouting. Demand from fresh retail, processing (paste, ketchup), and exports gives growers multiple sale channels.",
+    "overview": {
+      "family": "Solanaceae", "lifecycle": "Annual",
+      "planting_depth": "1–2 cm (nursery)",
+      "spacing": "60x45 cm", "soil_type": "Well-drained sandy loam",
+      "ph_range": "6.0–6.8"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing with organic matter; raised beds",
+      "seed_rate": "200–250 g/acre",
+      "fertilizer": "NPK 150:75:75 kg/acre + foliar Ca",
+      "irrigation": "Drip irrigation preferred; avoid moisture swings",
+      "intercropping": "Coriander, onion, garlic"
+    },
+    "pests": [
+      { "name": "Late blight", "severity": "High", "treatment": "Mancozeb/metalaxyl spray" },
+      { "name": "Whitefly", "severity": "High", "treatment": "Imidacloprid / yellow sticky traps" },
+      { "name": "Fruit borer", "severity": "Medium", "treatment": "HaNPV spray + pheromone traps" }
+    ],
+    "resources": [
+      { "title": "High-Density Tomato Production", "type": "video", "duration": "18 min" },
+      { "title": "Integrated Pest Management", "type": "article", "duration": "10 min read" }
+    ]
+  },
+  {
+    "slug": "onion",
+    "name": "Onion",
+    "scientific_name": "Allium cepa",
+    "category": "Vegetables",
+    "season": "Rabi + Kharif",
+    "water_need": "Medium",
+    "climate": "Temperate",
+    "region": "Maharashtra, Karnataka, MP",
+    "duration": "90–150 days after transplanting",
+    "expected_yield": "10–15 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹1,200–2,500/quintal",
+    "image_file": "File:Onions.jpg",
+    "description": "A high-value bulb crop with year-round kitchen demand and export markets; proper curing and storage let growers sell into price peaks. Price volatility is the main risk, rewarded by strong returns in lean seasons.",
+    "overview": {
+      "family": "Amaryllidaceae", "lifecycle": "Biennial",
+      "planting_depth": "2–3 cm (transplant)",
+      "spacing": "15x10 cm", "soil_type": "Well-drained loam",
+      "ph_range": "6.0–7.5"
+    },
+    "agronomy": {
+      "land_prep": "Raised beds; incorporate compost",
+      "seed_rate": "3–4 kg/acre (for nursery)",
+      "fertilizer": "NPK 100:50:75 kg/acre",
+      "irrigation": "Light, frequent — every 3–5 days",
+      "intercropping": "Coriander, sugarcane (first 90 days)"
+    },
+    "pests": [
+      { "name": "Thrips", "severity": "High", "treatment": "Fipronil / neem oil spray" },
+      { "name": "Purple blotch", "severity": "Medium", "treatment": "Mancozeb + iprodione" },
+      { "name": "Stemphylium blight", "severity": "Medium", "treatment": "Tebuconazole spray" }
+    ],
+    "resources": [
+      { "title": "Onion Production Guide", "type": "video", "duration": "13 min" },
+      { "title": "Onion Curing and Storage", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "potato",
+    "name": "Potato",
+    "scientific_name": "Solanum tuberosum",
+    "category": "Vegetables",
+    "season": "Rabi",
+    "water_need": "Medium",
+    "climate": "Temperate",
+    "region": "UP, WB, Bihar",
+    "duration": "90–120 days",
+    "expected_yield": "8–12 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹1,000–1,800/quintal",
+    "image_file": "File:Potatoes.jpg",
+    "description": "The fourth most important food crop worldwide, grown from seed tubers in cool weather; processing units (chips, fries) offer contracted buyers. Cold storage allows farmers to hold stock and sell at better winter prices.",
+    "overview": {
+      "family": "Solanaceae", "lifecycle": "Annual",
+      "planting_depth": "10–15 cm (seed tuber)",
+      "spacing": "60x25 cm", "soil_type": "Sandy loam, well drained",
+      "ph_range": "5.5–6.5"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing; ridges and furrows",
+      "seed_rate": "800–1,000 kg/acre (tubers)",
+      "fertilizer": "NPK 120:80:120 kg/acre",
+      "irrigation": "Every 7–10 days; critical at tuber initiation",
+      "intercropping": "Sole crop; rotate with cereals"
+    },
+    "pests": [
+      { "name": "Late blight", "severity": "High", "treatment": "Mancozeb/cymoxanil spray at first spots" },
+      { "name": "Cutworm", "severity": "Medium", "treatment": "Chlorpyrifos soil application" },
+      { "name": "Aphids (virus spread)", "severity": "Medium", "treatment": "Imidacloprid; certified seed" }
+    ],
+    "resources": [
+      { "title": "Potato Cultivation", "type": "video", "duration": "14 min" },
+      { "title": "Potato Cold Storage Economics", "type": "article", "duration": "9 min read" }
+    ]
+  },
+  {
+    "slug": "garlic",
+    "name": "Garlic",
+    "scientific_name": "Allium sativum",
+    "category": "Vegetables",
+    "season": "Rabi",
+    "water_need": "Low",
+    "climate": "Temperate",
+    "region": "MP, Rajasthan, Gujarat",
+    "duration": "130–150 days",
+    "expected_yield": "2.0–3.0 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "Very High",
+    "market_price": "₹8,000–12,000/quintal",
+    "image_file": "File:Garlic.jpg",
+    "description": "A high-value bulb crop with huge culinary and medicinal demand; cloves are planted in cool weather and bulbs cured after harvest. Prices are among the best of any vegetable when supply tightens.",
+    "overview": {
+      "family": "Amaryllidaceae", "lifecycle": "Annual",
+      "planting_depth": "3–5 cm (clove)",
+      "spacing": "15x10 cm", "soil_type": "Well-drained loam",
+      "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Fine tilth; raised beds",
+      "seed_rate": "250–350 kg/acre (cloves)",
+      "fertilizer": "NPK 60:40:40 kg/acre",
+      "irrigation": "5–6 irrigations; stop before harvest",
+      "intercropping": "Sole crop; follow cereals"
+    },
+    "pests": [
+      { "name": "Thrips", "severity": "High", "treatment": "Fipronil spray" },
+      { "name": "Purple blotch", "severity": "Medium", "treatment": "Mancozeb spray" },
+      { "name": "Bulb rot", "severity": "Medium", "treatment": "Proper curing; avoid excess irrigation" }
+    ],
+    "resources": [
+      { "title": "Garlic Production", "type": "video", "duration": "11 min" },
+      { "title": "Garlic Curing and Grading", "type": "article", "duration": "6 min read" }
+    ]
+  },
+  {
+    "slug": "okra",
+    "name": "Okra (Bhindi)",
+    "scientific_name": "Abelmoschus esculentus",
+    "category": "Vegetables",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Pan-India",
+    "duration": "50–65 days",
+    "expected_yield": "3.0–5.0 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "High",
+    "market_price": "₹1,500–3,000/quintal",
+    "image_file": "File:Okra.jpg",
+    "description": "A warm-season vegetable harvested continuously over 2–3 months, giving farmers multiple income flushes from one planting. Fresh market, export, and processing (frozen, dehydrated) all absorb production.",
+    "overview": {
+      "family": "Malvaceae", "lifecycle": "Annual",
+      "planting_depth": "2–3 cm", "spacing": "45x30 cm",
+      "soil_type": "Well-drained loam", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing; ridges",
+      "seed_rate": "3–4 kg/acre",
+      "fertilizer": "NPK 60:40:40 kg/acre",
+      "irrigation": "Every 5–7 days; critical at flowering",
+      "intercropping": "Cowpea, chili"
+    },
+    "pests": [
+      { "name": "Shoot and fruit borer", "severity": "High", "treatment": "Roguing infested shoots + chlorantraniliprole" },
+      { "name": "Yellow vein mosaic virus", "severity": "High", "treatment": "Resistant varieties; whitefly control" },
+      { "name": "Jassids", "severity": "Medium", "treatment": "Imidacloprid spray" }
+    ],
+    "resources": [
+      { "title": "Okra Year-Round Production", "type": "video", "duration": "12 min" },
+      { "title": "Vegetable Pest Control", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "brinjal",
+    "name": "Brinjal (Eggplant)",
+    "scientific_name": "Solanum melongena",
+    "category": "Vegetables",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Pan-India",
+    "duration": "75–90 days",
+    "expected_yield": "8–12 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹1,200–2,000/quintal",
+    "image_file": "File:Eggplant.jpg",
+    "description": "A long-harvesting vegetable with many regional varieties, rich in fiber and antioxidants; plants fruit for months, spreading income. Steady everyday demand makes it a staple of peri-urban vegetable farms.",
+    "overview": {
+      "family": "Solanaceae", "lifecycle": "Annual",
+      "planting_depth": "1–2 cm (nursery)",
+      "spacing": "60x45 cm", "soil_type": "Well-drained loam",
+      "ph_range": "5.5–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing; raised beds",
+      "seed_rate": "150–200 g/acre",
+      "fertilizer": "NPK 100:50:50 kg/acre",
+      "irrigation": "Drip or furrow every 4–7 days",
+      "intercropping": "Onion, coriander"
+    },
+    "pests": [
+      { "name": "Shoot and fruit borer", "severity": "High", "treatment": "Pheromone traps + chlorantraniliprole" },
+      { "name": "Whitefly", "severity": "Medium", "treatment": "Neem oil / imidacloprid" },
+      { "name": "Little leaf disease", "severity": "High", "treatment": "Rogue infected plants; vector control" }
+    ],
+    "resources": [
+      { "title": "Brinjal Production", "type": "video", "duration": "10 min" },
+      { "title": "Fruit Borer IPM", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "cauliflower",
+    "name": "Cauliflower",
+    "scientific_name": "Brassica oleracea var. botrytis",
+    "category": "Vegetables",
+    "season": "Rabi",
+    "water_need": "Medium",
+    "climate": "Temperate",
+    "region": "UP, MP, WB",
+    "duration": "90–120 days",
+    "expected_yield": "8–12 tons/acre",
+    "difficulty": "Hard",
+    "profitability": "High",
+    "market_price": "₹1,500–3,000/quintal",
+    "image_file": "File:Cauliflower.jpg",
+    "description": "A cool-season cole crop whose curd forms poorly in heat or frost, so variety choice and timing are critical. Wholesale, retail, and processing (frozen) channels give consistent demand through winter.",
+    "overview": {
+      "family": "Brassicaceae", "lifecycle": "Annual",
+      "planting_depth": "1–2 cm (nursery)",
+      "spacing": "45x45 cm", "soil_type": "Rich, well-drained loam",
+      "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Fine seedbed + FYM incorporation",
+      "seed_rate": "250–400 g/acre",
+      "fertilizer": "NPK 120:60:60 kg/acre",
+      "irrigation": "Every 5–7 days; avoid stress during curd formation",
+      "intercropping": "Sole crop; rotate with legumes"
+    },
+    "pests": [
+      { "name": "Diamondback moth", "severity": "High", "treatment": "Bt spray / spinosad" },
+      { "name": "Aphids", "severity": "Medium", "treatment": "Imidacloprid spray" },
+      { "name": "Black rot", "severity": "High", "treatment": "Resistant varieties; copper spray; crop rotation" }
+    ],
+    "resources": [
+      { "title": "Cole Crop Production", "type": "video", "duration": "13 min" },
+      { "title": "Cauliflower Varieties and Seasons", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "cabbage",
+    "name": "Cabbage",
+    "scientific_name": "Brassica oleracea var. capitata",
+    "category": "Vegetables",
+    "season": "Rabi",
+    "water_need": "Medium",
+    "climate": "Temperate",
+    "region": "UP, MP, HP",
+    "duration": "90–120 days",
+    "expected_yield": "10–15 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "Medium",
+    "market_price": "₹800–1,500/quintal",
+    "image_file": "File:Cabbage.jpg",
+    "description": "A hardy, heavy-yielding cole crop that grows in cool weather and stores well; it is a cheap everyday vegetable with steady retail demand. Good head quality and timely harvest protect margins.",
+    "overview": {
+      "family": "Brassicaceae", "lifecycle": "Biennial",
+      "planting_depth": "1–2 cm (nursery)",
+      "spacing": "45x45 cm", "soil_type": "Rich loam",
+      "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Fine seedbed with organic matter",
+      "seed_rate": "200–300 g/acre",
+      "fertilizer": "NPK 100:60:60 kg/acre",
+      "irrigation": "Every 4–6 days; head formation critical",
+      "intercropping": "Sole crop; rotate with legumes"
+    },
+    "pests": [
+      { "name": "Diamondback moth", "severity": "High", "treatment": "Spinosad / Bt spray" },
+      { "name": "Aphids", "severity": "Medium", "treatment": "Imidacloprid" },
+      { "name": "Soft rot", "severity": "Medium", "treatment": "Avoid overhead water; copper spray" }
+    ],
+    "resources": [
+      { "title": "Cabbage Cultivation", "type": "video", "duration": "10 min" },
+      { "title": "Cole Crop IPM", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "carrot",
+    "name": "Carrot",
+    "scientific_name": "Daucus carota",
+    "category": "Vegetables",
+    "season": "Rabi",
+    "water_need": "Medium",
+    "climate": "Temperate",
+    "region": "HP, Punjab, UP",
+    "duration": "70–90 days",
+    "expected_yield": "6–8 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹1,500–2,500/quintal",
+    "image_file": "File:Carrots.jpg",
+    "description": "A beta-carotene-rich root vegetable of cool winters; loose, stone-free soil is essential for straight roots. Salad, juice, and processing demand keep it a reliable rabi vegetable for local markets.",
+    "overview": {
+      "family": "Apiaceae", "lifecycle": "Biennial",
+      "planting_depth": "1–2 cm", "spacing": "30x5–8 cm",
+      "soil_type": "Deep sandy loam", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing; fine, clod-free beds",
+      "seed_rate": "1.5–2 kg/acre",
+      "fertilizer": "NPK 60:40:40 kg/acre",
+      "irrigation": "Light and frequent; avoid crusting",
+      "intercropping": "Sole crop; rotate with cereals"
+    },
+    "pests": [
+      { "name": "Leaf blight", "severity": "Medium", "treatment": "Mancozeb spray" },
+      { "name": "Root-knot nematode", "severity": "Medium", "treatment": "Crop rotation; resistant varieties" },
+      { "name": "Aphids", "severity": "Low", "treatment": "Dimethoate spray" }
+    ],
+    "resources": [
+      { "title": "Root Vegetable Production", "type": "video", "duration": "9 min" },
+      { "title": "Carrot Variety Selection", "type": "article", "duration": "6 min read" }
+    ]
+  },
+  {
+    "slug": "peas",
+    "name": "Green Peas",
+    "scientific_name": "Pisum sativum",
+    "category": "Vegetables",
+    "season": "Rabi",
+    "water_need": "Medium",
+    "climate": "Temperate",
+    "region": "UP, MP, HP",
+    "duration": "60–75 days",
+    "expected_yield": "2.0–3.0 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "High",
+    "market_price": "₹3,000–5,000/quintal",
+    "image_file": "File:Peas.jpg",
+    "description": "A cool-season vegetable legume harvested as green pods; nitrogen-fixing roots also enrich the soil for the next crop. Frozen-pea processors contract early-season volumes, steadying prices.",
+    "overview": {
+      "family": "Fabaceae", "lifecycle": "Annual",
+      "planting_depth": "3–4 cm", "spacing": "30x10 cm",
+      "soil_type": "Well-drained loam", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Fine seedbed; light ploughing",
+      "seed_rate": "25–30 kg/acre",
+      "fertilizer": "NPK 25:50:25 + rhizobium",
+      "irrigation": "Critical at flowering and pod filling",
+      "intercropping": "Potato, carrot, mustard"
+    },
+    "pests": [
+      { "name": "Pod borer", "severity": "High", "treatment": "HaNPV + chlorantraniliprole" },
+      { "name": "Powdery mildew", "severity": "Medium", "treatment": "Sulfur spray" },
+      { "name": "Aphids", "severity": "Medium", "treatment": "Imidacloprid" }
+    ],
+    "resources": [
+      { "title": "Peas for Fresh and Frozen Markets", "type": "video", "duration": "10 min" },
+      { "title": "Legume Vegetables", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "capsicum",
+    "name": "Capsicum (Bell Pepper)",
+    "scientific_name": "Capsicum annuum",
+    "category": "Vegetables",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Pan-India",
+    "duration": "70–90 days",
+    "expected_yield": "4.0–6.0 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹2,000–4,000/quintal",
+    "image_file": "File:Capsicum annuum.jpg",
+    "description": "A colorful, vitamin-rich vegetable grown for fresh retail and processing; colored varieties (yellow, red) command premium prices. Staking, pruning, and steady irrigation protect quality and returns.",
+    "overview": {
+      "family": "Solanaceae", "lifecycle": "Annual",
+      "planting_depth": "1–2 cm (nursery)",
+      "spacing": "45–60x30 cm", "soil_type": "Well-drained loam",
+      "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Raised beds with mulch (polyhouse/drip)",
+      "seed_rate": "150–200 g/acre",
+      "fertilizer": "NPK 120:60:60 kg/acre",
+      "irrigation": "Drip every 2–3 days",
+      "intercropping": "Sole crop under shade net"
+    },
+    "pests": [
+      { "name": "Fruit borer", "severity": "High", "treatment": "Chlorantraniliprole + pheromone traps" },
+      { "name": "Thrips", "severity": "High", "treatment": "Spinosad / fipronil" },
+      { "name": "Powdery mildew", "severity": "Medium", "treatment": "Sulfur / hexaconazole spray" }
+    ],
+    "resources": [
+      { "title": "Protected Capsicum Cultivation", "type": "video", "duration": "15 min" },
+      { "title": "Polyhouse Vegetable Farming", "type": "article", "duration": "10 min read" }
+    ]
+  },
+  {
+    "slug": "chili",
+    "name": "Chili Pepper",
+    "scientific_name": "Capsicum annuum",
+    "category": "Vegetables",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Andhra Pradesh, Telangana",
+    "duration": "90–120 days",
+    "expected_yield": "1.0–1.5 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "Very High",
+    "market_price": "₹8,000–15,000/quintal",
+    "image_file": "File:Red chillies.jpg",
+    "description": "A high-value spice crop dried and sold for culinary, oleoresin, and dye extraction; India is the world's largest producer and exporter. Quality drying and grading unlock the best export prices.",
+    "overview": {
+      "family": "Solanaceae", "lifecycle": "Annual",
+      "planting_depth": "1–2 cm (nursery)",
+      "spacing": "60x45 cm", "soil_type": "Well-drained loam",
+      "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing; ridges and furrows",
+      "seed_rate": "300–400 g/acre",
+      "fertilizer": "NPK 80:40:40 kg/acre",
+      "irrigation": "Critical at flowering and fruit set",
+      "intercropping": "Onion, groundnut"
+    },
+    "pests": [
+      { "name": "Fruit borer", "severity": "High", "treatment": "Chlorantraniliprole + pheromone traps" },
+      { "name": "Thrips & mites", "severity": "High", "treatment": "Spinosad / sulfur sprays" },
+      { "name": "Powdery mildew", "severity": "Medium", "treatment": "Hexaconazole spray" }
+    ],
+    "resources": [
+      { "title": "Chili for Export", "type": "video", "duration": "14 min" },
+      { "title": "Chili Drying and Grading", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "cucumber",
+    "name": "Cucumber",
+    "scientific_name": "Cucumis sativus",
+    "category": "Vegetables",
+    "season": "Kharif",
+    "water_need": "High",
+    "climate": "Tropical",
+    "region": "Pan-India",
+    "duration": "50–65 days",
+    "expected_yield": "6–8 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹1,000–2,000/quintal",
+    "image_file": "File:Cucumbers.jpg",
+    "description": "A quick-maturing, high-water-content summer vegetable harvested within two months of sowing. Frequent picking over several weeks and fresh retail demand make it a fast cash crop for small farms.",
+    "overview": {
+      "family": "Cucurbitaceae", "lifecycle": "Annual",
+      "planting_depth": "2–3 cm", "spacing": "90–120x30 cm",
+      "soil_type": "Sandy loam", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Raised beds / ridges; trellis for quality",
+      "seed_rate": "400–500 g/acre",
+      "fertilizer": "NPK 60:40:40 kg/acre",
+      "irrigation": "Frequent; avoid water stress at fruiting",
+      "intercropping": "Sole crop; trellised"
+    },
+    "pests": [
+      { "name": "Fruit fly", "severity": "High", "treatment": "Cue-lure traps + bait sprays" },
+      { "name": "Powdery mildew", "severity": "Medium", "treatment": "Sulfur spray" },
+      { "name": "Downy mildew", "severity": "Medium", "treatment": "Metalaxyl + mancozeb" }
+    ],
+    "resources": [
+      { "title": "Cucumber Production", "type": "video", "duration": "9 min" },
+      { "title": "Cucurbit Pest Management", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "bitter_gourd",
+    "name": "Bitter Gourd (Karela)",
+    "scientific_name": "Momordica charantia",
+    "category": "Vegetables",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Pan-India",
+    "duration": "60–75 days",
+    "expected_yield": "3.0–4.0 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹2,000–4,000/quintal",
+    "image_file": "File:Bitter melon.jpg",
+    "description": "A medicinally valued gourd whose bitter fruits are a kitchen staple and increasingly sought for juice and nutraceuticals. Trellising and regular picking over 2–3 months keep income flowing.",
+    "overview": {
+      "family": "Cucurbitaceae", "lifecycle": "Annual",
+      "planting_depth": "2–3 cm", "spacing": "150x60 cm (trellis)",
+      "soil_type": "Well-drained loam", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Raised beds; bamboo/trellis support",
+      "seed_rate": "400–500 g/acre",
+      "fertilizer": "NPK 60:40:40 kg/acre",
+      "irrigation": "Every 3–5 days; mulching conserves water",
+      "intercropping": "Sole crop on trellis"
+    },
+    "pests": [
+      { "name": "Fruit fly", "severity": "High", "treatment": "Cue-lure traps; collect fallen fruits" },
+      { "name": "Powdery mildew", "severity": "Medium", "treatment": "Sulfur / hexaconazole" },
+      { "name": "Red pumpkin beetle", "severity": "Low", "treatment": "Carbaryl dusting" }
+    ],
+    "resources": [
+      { "title": "Gourds on Trellis", "type": "video", "duration": "10 min" },
+      { "title": "Fruit Fly Control in Cucurbits", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "bottle_gourd",
+    "name": "Bottle Gourd (Lauki)",
+    "scientific_name": "Lagenaria siceraria",
+    "category": "Vegetables",
+    "season": "Kharif",
+    "water_need": "High",
+    "climate": "Tropical",
+    "region": "Pan-India",
+    "duration": "60–75 days",
+    "expected_yield": "8–12 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹800–1,500/quintal",
+    "image_file": "File:Bottle gourd.jpg",
+    "description": "A high-yielding climbing gourd grown for its tender fruits, widely used in curries and juice; young fruits are picked repeatedly. Its bulk and moderate price suit farmers targeting steady local markets.",
+    "overview": {
+      "family": "Cucurbitaceae", "lifecycle": "Annual",
+      "planting_depth": "2–3 cm", "spacing": "180x60 cm",
+      "soil_type": "Loam, well drained", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Raised beds / pits with FYM",
+      "seed_rate": "250–300 g/acre",
+      "fertilizer": "NPK 60:40:40 kg/acre",
+      "irrigation": "Regular; mulching helps",
+      "intercropping": "Sole crop on bower"
+    },
+    "pests": [
+      { "name": "Fruit fly", "severity": "High", "treatment": "Cue-lure traps + bait spray" },
+      { "name": "Powdery mildew", "severity": "Medium", "treatment": "Sulfur spray" },
+      { "name": "Aphids", "severity": "Low", "treatment": "Imidacloprid" }
+    ],
+    "resources": [
+      { "title": "Bottle Gourd Cultivation", "type": "video", "duration": "9 min" },
+      { "title": "Bower System for Gourds", "type": "article", "duration": "6 min read" }
+    ]
+  },
+  {
+    "slug": "ridge_gourd",
+    "name": "Ridge Gourd (Turai)",
+    "scientific_name": "Luffa acutangula",
+    "category": "Vegetables",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Pan-India",
+    "duration": "55–65 days",
+    "expected_yield": "4.0–6.0 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹1,000–2,000/quintal",
+    "image_file": "File:Luffa acutangula.jpg",
+    "description": "A fast-growing ridge-climbing gourd harvested young, with steady everyday demand in vegetable markets. Multiple pickings over weeks make it a dependable cash crop for summer gardens.",
+    "overview": {
+      "family": "Cucurbitaceae", "lifecycle": "Annual",
+      "planting_depth": "2–3 cm", "spacing": "150x60 cm",
+      "soil_type": "Well-drained loam", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Raised beds; trellis support",
+      "seed_rate": "300–400 g/acre",
+      "fertilizer": "NPK 60:40:40 kg/acre",
+      "irrigation": "Every 3–5 days",
+      "intercropping": "Sole crop; short-cycle intercrops"
+    },
+    "pests": [
+      { "name": "Fruit fly", "severity": "High", "treatment": "Cue-lure traps" },
+      { "name": "Powdery mildew", "severity": "Medium", "treatment": "Sulfur spray" },
+      { "name": "Red pumpkin beetle", "severity": "Low", "treatment": "Carbaryl dusting" }
+    ],
+    "resources": [
+      { "title": "Ridge Gourd Farming", "type": "video", "duration": "8 min" },
+      { "title": "Summer Vegetable Calendar", "type": "article", "duration": "6 min read" }
+    ]
+  },
+  {
+    "slug": "pumpkin",
+    "name": "Pumpkin",
+    "scientific_name": "Cucurbita moschata",
+    "category": "Vegetables",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Pan-India",
+    "duration": "90–120 days",
+    "expected_yield": "8–12 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹600–1,200/quintal",
+    "image_file": "File:Pumpkins.jpg",
+    "description": "A sprawling vining vegetable whose mature fruits store for months without cold storage, letting farmers sell into off-season price rises. Culinary, seed, and processing (puree) markets all exist.",
+    "overview": {
+      "family": "Cucurbitaceae", "lifecycle": "Annual",
+      "planting_depth": "2–3 cm", "spacing": "150–200x100 cm",
+      "soil_type": "Rich, well-drained loam", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Pits with FYM; vine training",
+      "seed_rate": "500–600 g/acre",
+      "fertilizer": "NPK 60:40:40 kg/acre",
+      "irrigation": "Critical at flowering and fruit growth",
+      "intercropping": "Maize, pulses (border planting)"
+    },
+    "pests": [
+      { "name": "Fruit fly", "severity": "High", "treatment": "Cue-lure traps" },
+      { "name": "Powdery mildew", "severity": "Medium", "treatment": "Sulfur spray" },
+      { "name": "Cucumber beetle", "severity": "Low", "treatment": "Imidacloprid drench" }
+    ],
+    "resources": [
+      { "title": "Pumpkin Storage and Marketing", "type": "video", "duration": "10 min" },
+      { "title": "Vine Crop Management", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "sweet_potato",
+    "name": "Sweet Potato",
+    "scientific_name": "Ipomoea batatas",
+    "category": "Vegetables",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "UP, WB, Bihar",
+    "duration": "100–120 days",
+    "expected_yield": "6–8 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹1,500–2,500/quintal",
+    "image_file": "File:Ipomoea batatas.jpg",
+    "description": "A nutritious, drought-tolerant tuber crop propagated from vine cuttings, rich in beta-carotene; it yields well on light soils with little input. Growing demand for healthy staples supports firm prices.",
+    "overview": {
+      "family": "Convolvulaceae", "lifecycle": "Annual",
+      "planting_depth": "5–8 cm (vine cutting)",
+      "spacing": "60x30 cm", "soil_type": "Sandy loam",
+      "ph_range": "5.5–6.5"
+    },
+    "agronomy": {
+      "land_prep": "Ridges and furrows; light soil preferred",
+      "seed_rate": "40,000–50,000 cuttings/acre",
+      "fertilizer": "NPK 50:40:60 kg/acre (high K)",
+      "irrigation": "Critical at vine establishment and tuber bulking",
+      "intercropping": "Maize, groundnut"
+    },
+    "pests": [
+      { "name": "Sweet potato weevil", "severity": "High", "treatment": "Clean cuttings; ridge earthing; pheromones" },
+      { "name": "Leaf scab", "severity": "Medium", "treatment": "Mancozeb spray" },
+      { "name": "Root-knot nematode", "severity": "Low", "treatment": "Crop rotation with cereals" }
+    ],
+    "resources": [
+      { "title": "Sweet Potato Production", "type": "video", "duration": "10 min" },
+      { "title": "Tuber Crop Nutrition", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "yam",
+    "name": "Yam",
+    "scientific_name": "Dioscorea alata",
+    "category": "Vegetables",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Kerala, Tamil Nadu, UP + West Africa",
+    "duration": "150–180 days",
+    "expected_yield": "4.0–6.0 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "Medium",
+    "market_price": "₹2,000–3,500/quintal",
+    "image_file": "File:Dioscorea alata.jpg",
+    "description": "A starchy tuber that is a staple in West Africa and South India, grown from small tuber setts with staking; it stores well for many months. Strong regional and diaspora demand keeps prices firm.",
+    "overview": {
+      "family": "Dioscoreaceae", "lifecycle": "Perennial (harvested annually)",
+      "planting_depth": "10–15 cm (setts)",
+      "spacing": "90–120x60 cm", "soil_type": "Deep, well-drained loam",
+      "ph_range": "5.5–6.5"
+    },
+    "agronomy": {
+      "land_prep": "Mounds/ridges; staking for twining vines",
+      "seed_rate": "500–700 kg/acre (setts)",
+      "fertilizer": "NPK 80:40:80 kg/acre",
+      "irrigation": "Regular; mulching for moisture",
+      "intercropping": "Maize, legumes (early phase)"
+    },
+    "pests": [
+      { "name": "Yam beetle", "severity": "Medium", "treatment": "Soil insecticide at planting" },
+      { "name": "Leaf spot (anthracnose)", "severity": "High", "treatment": "Mancozeb/copper sprays; resistant varieties" },
+      { "name": "Nematodes", "severity": "Medium", "treatment": "Crop rotation; clean setts" }
+    ],
+    "resources": [
+      { "title": "Yam Production Systems", "type": "video", "duration": "12 min" },
+      { "title": "Tuber Staple Crops of Africa", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "turmeric",
+    "name": "Turmeric (Haldi)",
+    "scientific_name": "Curcuma longa",
+    "category": "Spices",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Tamil Nadu, AP, Maharashtra",
+    "duration": "240–270 days",
+    "expected_yield": "3.0–4.0 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "Very High",
+    "market_price": "₹8,000–12,000/quintal",
+    "image_file": "File:Curcuma longa.jpg",
+    "description": "The golden spice with booming demand from cooking, cosmetics, and curcumin health supplements; rhizomes are boiled, dried, and polished before sale. India dominates world production and export.",
+    "overview": {
+      "family": "Zingiberaceae", "lifecycle": "Perennial (10 months)",
+      "planting_depth": "5–8 cm (rhizome)",
+      "spacing": "30x25 cm", "soil_type": "Sandy loam, well drained",
+      "ph_range": "5.5–6.5"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing; ridges",
+      "seed_rate": "400–500 kg/acre (rhizomes)",
+      "fertilizer": "NPK 60:50:120 kg/acre + FYM",
+      "irrigation": "Regular until maturity; reduce before harvest",
+      "intercropping": "Onion, ginger (shade crops)"
+    },
+    "pests": [
+      { "name": "Rhizome rot", "severity": "High", "treatment": "Seed treatment with mancozeb; drainage" },
+      { "name": "Shoot borer", "severity": "Medium", "treatment": "Quinalphos spray" },
+      { "name": "Leaf spot", "severity": "Low", "treatment": "Mancozeb spray" }
+    ],
+    "resources": [
+      { "title": "Turmeric Processing and Value Addition", "type": "video", "duration": "14 min" },
+      { "title": "Spice Crops of India", "type": "article", "duration": "9 min read" }
+    ]
+  },
+  {
+    "slug": "ginger",
+    "name": "Ginger",
+    "scientific_name": "Zingiber officinale",
+    "category": "Spices",
+    "season": "Kharif",
+    "water_need": "High",
+    "climate": "Tropical",
+    "region": "Kerala, Meghalaya, AP",
+    "duration": "240–270 days",
+    "expected_yield": "4.0–6.0 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "Very High",
+    "market_price": "₹15,000–25,000/quintal",
+    "image_file": "File:Ginger.jpg",
+    "description": "An aromatic rhizome used fresh, dried, and in beverages and medicines, with strong export demand; it needs shade, moisture, and loose soil. High per-kg prices reward careful rhizome selection and disease control.",
+    "overview": {
+      "family": "Zingiberaceae", "lifecycle": "Annual",
+      "planting_depth": "5–8 cm (rhizome)",
+      "spacing": "30x20 cm", "soil_type": "Well-drained loam",
+      "ph_range": "5.5–6.5"
+    },
+    "agronomy": {
+      "land_prep": "Raised beds; partial shade",
+      "seed_rate": "300–400 kg/acre (rhizomes)",
+      "fertilizer": "NPK 50:40:60 kg/acre + FYM",
+      "irrigation": "Light and frequent; avoid waterlogging",
+      "intercropping": "Turmeric, shade trees"
+    },
+    "pests": [
+      { "name": "Rhizome rot (soft rot)", "severity": "High", "treatment": "Seed treatment; drainage; metalaxyl" },
+      { "name": "Shoot borer", "severity": "Medium", "treatment": "Quinalphos spray" },
+      { "name": "Leaf spot", "severity": "Low", "treatment": "Mancozeb" }
+    ],
+    "resources": [
+      { "title": "Ginger Cultivation and Curing", "type": "video", "duration": "13 min" },
+      { "title": "Ginger Export Standards", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "cardamom",
+    "name": "Cardamom (Elaichi)",
+    "scientific_name": "Elettaria cardamomum",
+    "category": "Spices",
+    "season": "Perennial",
+    "water_need": "High",
+    "climate": "Tropical",
+    "region": "Kerala, Karnataka, Sikkim",
+    "duration": "Perennial (bears from 3rd year)",
+    "expected_yield": "0.1–0.2 tons/acre",
+    "difficulty": "Hard",
+    "profitability": "Very High",
+    "market_price": "₹80,000–1,20,000/quintal",
+    "image_file": "File:Cardamom.jpg",
+    "description": "The 'Queen of Spices' — a shade-loving highland perennial whose green pods are among the world's most valuable spices per kilo. Long investment horizon, but plantation yields pay exceptionally well.",
+    "overview": {
+      "family": "Zingiberaceae", "lifecycle": "Perennial",
+      "planting_depth": "Transplanted suckers",
+      "spacing": "180–240x180–240 cm", "soil_type": "Humus-rich, acidic loam",
+      "ph_range": "5.0–6.5"
+    },
+    "agronomy": {
+      "land_prep": "Shade regulation; terracing on slopes",
+      "seed_rate": "1,000–1,200 suckers/acre",
+      "fertilizer": "NPK 60:60:120 kg/acre + organic mulch",
+      "irrigation": "Drip/misting in dry months",
+      "intercropping": "Black pepper on shade trees"
+    },
+    "pests": [
+      { "name": "Rhizome rot", "severity": "High", "treatment": "Drainage; Trichoderma drench" },
+      { "name": "Thrips", "severity": "Medium", "treatment": "Fipronil spray on panicles" },
+      { "name": "Katte (viral mosaic)", "severity": "High", "treatment": "Rogue infected clumps; control aphids" }
+    ],
+    "resources": [
+      { "title": "Cardamom Plantation Management", "type": "video", "duration": "16 min" },
+      { "title": "Highland Spice Economics", "type": "article", "duration": "9 min read" }
+    ]
+  },
+  {
+    "slug": "black_pepper",
+    "name": "Black Pepper",
+    "scientific_name": "Piper nigrum",
+    "category": "Spices",
+    "season": "Perennial",
+    "water_need": "High",
+    "climate": "Tropical",
+    "region": "Kerala, Karnataka",
+    "duration": "Perennial (bears from 3rd year)",
+    "expected_yield": "0.5–1.0 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "Very High",
+    "market_price": "₹60,000–75,000/quintal",
+    "image_file": "File:Black pepper.jpg",
+    "description": "The 'King of Spices' — a perennial vine trained on support trees or live standards, bearing spikes of peppercorns sun-dried to black. Premium export prices reward quality curing and vine health.",
+    "overview": {
+      "family": "Piperaceae", "lifecycle": "Perennial vine",
+      "planting_depth": "20–30 cm (cuttings near support)",
+      "spacing": "180–240x180–240 cm", "soil_type": "Well-drained, humus-rich",
+      "ph_range": "5.5–6.5"
+    },
+    "agronomy": {
+      "land_prep": "Plant living standards; training vines",
+      "seed_rate": "500–600 rooted cuttings/acre",
+      "fertilizer": "NPK 50:50:150 kg/acre + organic manure",
+      "irrigation": "Mulch + irrigation in dry months",
+      "intercropping": "Coffee, cardamom, arecanut"
+    },
+    "pests": [
+      { "name": "Foot rot (quick wilt)", "severity": "High", "treatment": "Drainage; metalaxyl drench; healthy cuttings" },
+      { "name": "Pollu beetle", "severity": "Medium", "treatment": "Quinalphos spray on spikes" },
+      { "name": "Scale insects", "severity": "Low", "treatment": "Fish-oil rosin soap spray" }
+    ],
+    "resources": [
+      { "title": "Black Pepper Cultivation", "type": "video", "duration": "15 min" },
+      { "title": "Pepper Curing and Grading", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "coriander",
+    "name": "Coriander (Dhania)",
+    "scientific_name": "Coriandrum sativum",
+    "category": "Spices",
+    "season": "Rabi",
+    "water_need": "Low",
+    "climate": "Temperate",
+    "region": "Rajasthan, MP, Gujarat",
+    "duration": "60–70 days",
+    "expected_yield": "0.5–0.8 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹6,000–8,000/quintal",
+    "image_file": "File:Coriander.jpg",
+    "description": "A dual-purpose spice grown for fresh leafy greens (cilantro) and dried seeds used in every Indian spice blend; it matures quickly. Leaf harvests bring fast cash while seed crops target spice markets.",
+    "overview": {
+      "family": "Apiaceae", "lifecycle": "Annual",
+      "planting_depth": "1–2 cm", "spacing": "30x10 cm",
+      "soil_type": "Well-drained loam", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Fine tilth; light irrigation after sowing",
+      "seed_rate": "5–6 kg/acre",
+      "fertilizer": "NPK 40:30:20 kg/acre",
+      "irrigation": "Light and frequent; avoid excess at flowering",
+      "intercropping": "Wheat, chickpea (border)"
+    },
+    "pests": [
+      { "name": "Aphids", "severity": "High", "treatment": "Dimethoate spray" },
+      { "name": "Powdery mildew", "severity": "Medium", "treatment": "Sulfur spray" },
+      { "name": "Leaf blight", "severity": "Low", "treatment": "Mancozeb" }
+    ],
+    "resources": [
+      { "title": "Coriander Seed Production", "type": "video", "duration": "9 min" },
+      { "title": "Seed Spice Cultivation", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "cumin",
+    "name": "Cumin (Jeera)",
+    "scientific_name": "Cuminum cyminum",
+    "category": "Spices",
+    "season": "Rabi",
+    "water_need": "Low",
+    "climate": "Temperate",
+    "region": "Rajasthan, Gujarat",
+    "duration": "100–120 days",
+    "expected_yield": "0.4–0.6 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "Very High",
+    "market_price": "₹15,000–20,000/quintal",
+    "image_file": "File:Cuminum cyminum.jpg",
+    "description": "A small-seeded, cool-dry spice with indispensable culinary demand and high export value; India is the world's largest producer. Prices can spike sharply in short-supply years, rewarding well-timed sales.",
+    "overview": {
+      "family": "Apiaceae", "lifecycle": "Annual",
+      "planting_depth": "1–2 cm", "spacing": "25x10 cm",
+      "soil_type": "Sandy loam, well drained", "ph_range": "6.5–7.5"
+    },
+    "agronomy": {
+      "land_prep": "Fine tilth; conserve moisture",
+      "seed_rate": "3–4 kg/acre",
+      "fertilizer": "NPK 30:30:20 kg/acre",
+      "irrigation": "2–3 irrigations; stop before harvest",
+      "intercropping": "Mustard, coriander"
+    },
+    "pests": [
+      { "name": "Aphids", "severity": "High", "treatment": "Dimethoate at flowering" },
+      { "name": "Powdery mildew", "severity": "Medium", "treatment": "Sulfur spray" },
+      { "name": "Fusarium wilt", "severity": "Medium", "treatment": "Resistant varieties; seed treatment" }
+    ],
+    "resources": [
+      { "title": "Cumin for Export", "type": "video", "duration": "11 min" },
+      { "title": "Seed Spice Post-Harvest", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "sugarcane",
+    "name": "Sugarcane",
+    "scientific_name": "Saccharum officinarum",
+    "category": "Cash Crops",
+    "season": "Perennial",
+    "water_need": "Very High",
+    "climate": "Tropical",
+    "region": "Maharashtra, UP, Karnataka",
+    "duration": "12–18 months",
+    "expected_yield": "45–60 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "Very High",
+    "market_price": "₹280–320/quintal",
+    "image_file": "File:Sugarcane.jpg",
+    "description": "A long-duration cash crop with assured mill procurement at fair remunerative prices; ratoon management extends productivity without replanting. Heavy water and fertilizer use reward attentive growers.",
+    "overview": {
+      "family": "Poaceae", "lifecycle": "Perennial",
+      "planting_depth": "5–7 cm (setts)", "spacing": "90–120 cm rows",
+      "soil_type": "Deep, well-drained", "ph_range": "6.5–7.5"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing and furrow making",
+      "seed_rate": "50,000–60,000 setts/acre",
+      "fertilizer": "NPK 200:80:80 kg/acre in 3 splits",
+      "irrigation": "Heavy; formative and grand growth critical",
+      "intercropping": "Potato, onion, garlic (first 90 days)"
+    },
+    "pests": [
+      { "name": "Red rot", "severity": "High", "treatment": "Resistant varieties + sett treatment with carbendazim" },
+      { "name": "Early shoot borer", "severity": "Medium", "treatment": "Carbofuran granules at planting" },
+      { "name": "Scale insects", "severity": "Low", "treatment": "Malathion spray" }
+    ],
+    "resources": [
+      { "title": "Sustainable Sugarcane Production", "type": "video", "duration": "20 min" },
+      { "title": "Water Management in Sugarcane", "type": "article", "duration": "12 min read" }
+    ]
+  },
+  {
+    "slug": "cotton",
+    "name": "Cotton",
+    "scientific_name": "Gossypium hirsutum",
+    "category": "Cash Crops",
+    "season": "Kharif",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Gujarat, Maharashtra, Telangana",
+    "duration": "160–200 days",
+    "expected_yield": "0.5–0.9 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹6,000–7,500/quintal",
+    "image_file": "File:Cotton plant.jpg",
+    "description": "The world's most important fiber crop, with strong domestic mill and export demand; Bt hybrids have cut bollworm losses. Long duration and price volatility make it a high-stakes but proven cash rotation.",
+    "overview": {
+      "family": "Malvaceae", "lifecycle": "Annual",
+      "planting_depth": "3–4 cm", "spacing": "90–100x30–45 cm",
+      "soil_type": "Black cotton soil", "ph_range": "5.8–8.0"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing; ridges and furrows",
+      "seed_rate": "1–1.5 kg/acre",
+      "fertilizer": "NPK 100:50:50 kg/acre",
+      "irrigation": "Critical at squaring, flowering, boll development",
+      "intercropping": "Green gram, black gram"
+    },
+    "pests": [
+      { "name": "Bollworm complex", "severity": "High", "treatment": "Bt hybrids + IPM; chlorantraniliprole if needed" },
+      { "name": "Whitefly", "severity": "High", "treatment": "Neem oil + yellow sticky traps" },
+      { "name": "Pink bollworm", "severity": "Medium", "treatment": "Pheromone traps + crop residue destruction" }
+    ],
+    "resources": [
+      { "title": "Bt Cotton Management", "type": "video", "duration": "16 min" },
+      { "title": "Pink Bollworm IPM", "type": "article", "duration": "11 min read" }
+    ]
+  },
+  {
+    "slug": "tea",
+    "name": "Tea",
+    "scientific_name": "Camellia sinensis",
+    "category": "Cash Crops",
+    "season": "Perennial",
+    "water_need": "High",
+    "climate": "Tropical",
+    "region": "Assam, Kerala, Darjeeling",
+    "duration": "Perennial (pluckable from 3rd year)",
+    "expected_yield": "1,500–2,000 kg/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹150–250/kg (green leaf)",
+    "image_file": "File:Camellia sinensis.jpg",
+    "description": "A plantation crop of cool, humid hills where tender shoots are plucked every 7–10 days for over 40 years; India is the world's second-largest producer. Consistent domestic consumption and export demand underpin prices.",
+    "overview": {
+      "family": "Theaceae", "lifecycle": "Perennial",
+      "planting_depth": "20–30 cm (bush)",
+      "spacing": "105x105 cm", "soil_type": "Acidic, well-drained",
+      "ph_range": "4.5–5.5"
+    },
+    "agronomy": {
+      "land_prep": "Terracing on slopes; shade tree planting",
+      "seed_rate": "5,000–6,000 plants/acre",
+      "fertilizer": "NPK 120:60:60 kg/acre split through year",
+      "irrigation": "Sprinkler/mist in dry months",
+      "intercropping": "Shade trees; pepper on supports"
+    },
+    "pests": [
+      { "name": "Tea mosquito bug", "severity": "High", "treatment": "Quinalphos / neem-based sprays" },
+      { "name": "Red spider mite", "severity": "High", "treatment": "Sulfur spray; avoid dry stress" },
+      { "name": "Blister blight", "severity": "Medium", "treatment": "Copper oxychloride at flush" }
+    ],
+    "resources": [
+      { "title": "Tea Plantation Management", "type": "video", "duration": "18 min" },
+      { "title": "Tea Processing Basics", "type": "article", "duration": "10 min read" }
+    ]
+  },
+  {
+    "slug": "coffee",
+    "name": "Coffee",
+    "scientific_name": "Coffea arabica",
+    "category": "Cash Crops",
+    "season": "Perennial",
+    "water_need": "High",
+    "climate": "Tropical",
+    "region": "Karnataka, Kerala, Tamil Nadu",
+    "duration": "Perennial (bears from 4th year)",
+    "expected_yield": "800–1,200 kg/acre",
+    "difficulty": "Hard",
+    "profitability": "Very High",
+    "market_price": "₹250–350/kg (cherry)",
+    "image_file": "File:Coffee beans.jpg",
+    "description": "A premium shade-grown plantation crop of the Western Ghats, with India's arabica fetching strong export premiums. Specialty and sustainability-certified lots are increasingly sold directly to roasters at higher prices.",
+    "overview": {
+      "family": "Rubiaceae", "lifecycle": "Perennial",
+      "planting_depth": "5–10 cm (seedling)",
+      "spacing": "180x180 cm", "soil_type": "Acidic loam, deep",
+      "ph_range": "5.0–6.5"
+    },
+    "agronomy": {
+      "land_prep": "Shade regulation; planting in terraces",
+      "seed_rate": "1,200–1,400 plants/acre",
+      "fertilizer": "NPK 80:40:80 kg/acre + organic mulch",
+      "irrigation": "Critical at flowering and berry filling",
+      "intercropping": "Black pepper, cardamom, arecanut"
+    },
+    "pests": [
+      { "name": "White stem borer", "severity": "High", "treatment": "Scraping + swabbing with monocrotophos" },
+      { "name": "Coffee berry borer", "severity": "High", "treatment": "Clean picking; Beauveria bassiana" },
+      { "name": "Leaf rust", "severity": "High", "treatment": "Resistant varieties (Sln series); copper sprays" }
+    ],
+    "resources": [
+      { "title": "Arabica Coffee Cultivation", "type": "video", "duration": "17 min" },
+      { "title": "Specialty Coffee Market Access", "type": "article", "duration": "9 min read" }
+    ]
+  },
+  {
+    "slug": "rubber",
+    "name": "Rubber",
+    "scientific_name": "Hevea brasiliensis",
+    "category": "Cash Crops",
+    "season": "Perennial",
+    "water_need": "High",
+    "climate": "Tropical",
+    "region": "Kerala, Karnataka, Tamil Nadu",
+    "duration": "Perennial (tapped from 7th year)",
+    "expected_yield": "1,500–2,000 kg/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹140–180/kg (sheet)",
+    "image_file": "File:Hevea brasiliensis.jpg",
+    "description": "A long-lived plantation tree tapped for latex used in tires and industrial goods; trees yield for 25+ years once mature. Stable industrial demand and rising tyre-sector consumption support prices.",
+    "overview": {
+      "family": "Euphorbiaceae", "lifecycle": "Perennial",
+      "planting_depth": "15–30 cm (budded stump)",
+      "spacing": "300x300 cm", "soil_type": "Deep, well-drained laterite",
+      "ph_range": "4.5–6.0"
+    },
+    "agronomy": {
+      "land_prep": "Clear + terrace; legume cover crops",
+      "seed_rate": "450–500 plants/acre",
+      "fertilizer": "NPK 100:50:100 kg/acre/annum",
+      "irrigation": "Mulching; rainfed mostly",
+      "intercropping": "Pineapple, banana (early years)"
+    },
+    "pests": [
+      { "name": "Abnormal leaf fall", "severity": "High", "treatment": "Carbendazim spray at refoliation" },
+      { "name": "Powdery mildew", "severity": "Medium", "treatment": "Sulfur dusting" },
+      { "name": "Termites", "severity": "Low", "treatment": "Chlorpyrifos soil drench" }
+    ],
+    "resources": [
+      { "title": "Rubber Tapping Systems", "type": "video", "duration": "15 min" },
+      { "title": "Natural Rubber Economics", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "tobacco",
+    "name": "Tobacco",
+    "scientific_name": "Nicotiana tabacum",
+    "category": "Cash Crops",
+    "season": "Rabi",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Andhra Pradesh, Gujarat, UP",
+    "duration": "90–120 days",
+    "expected_yield": "1.0–1.5 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹150–200/kg (FCV leaf)",
+    "image_file": "File:Nicotiana tabacum.jpg",
+    "description": "A high-value leaf crop grown under auction-board regulation in India, with export and domestic cigarette demand; curing and grading determine price. Regulated auctions provide a structured, transparent market.",
+    "overview": {
+      "family": "Solanaceae", "lifecycle": "Annual",
+      "planting_depth": "Transplanted seedlings",
+      "spacing": "75x60 cm", "soil_type": "Well-drained loam",
+      "ph_range": "5.5–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Fine seedbed; nursery raising",
+      "seed_rate": "60–80 g/acre (nursery)",
+      "fertilizer": "NPK 60:60:60 kg/acre",
+      "irrigation": "Critical after transplant and at topping",
+      "intercropping": "Sole crop; rotate with pulses"
+    },
+    "pests": [
+      { "name": "Aphids", "severity": "Medium", "treatment": "Imidacloprid spray" },
+      { "name": "Tobacco caterpillar", "severity": "High", "treatment": "HaNPV + handpicking" },
+      { "name": "Frog-eye spot", "severity": "Medium", "treatment": "Mancozeb spray" }
+    ],
+    "resources": [
+      { "title": "FCV Tobacco Production", "type": "video", "duration": "14 min" },
+      { "title": "Tobacco Curing Methods", "type": "article", "duration": "9 min read" }
+    ]
+  },
+  {
+    "slug": "jute",
+    "name": "Jute",
+    "scientific_name": "Corchorus olitorius",
+    "category": "Cash Crops",
+    "season": "Kharif",
+    "water_need": "High",
+    "climate": "Tropical",
+    "region": "West Bengal, Bihar, Assam",
+    "duration": "120–150 days",
+    "expected_yield": "10–15 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹3,500–4,500/quintal",
+    "image_file": "File:Jute.jpg",
+    "description": "The 'golden fiber', an eco-friendly bast fiber retted from stems for sacks, yarn, and increasingly geotextiles; it thrives in the humid Gangetic delta. Growing bans on plastics are expanding jute-based packaging demand.",
+    "overview": {
+      "family": "Malvaceae", "lifecycle": "Annual",
+      "planting_depth": "2–3 cm", "spacing": "15–30x5–10 cm",
+      "soil_type": "Alluvial loam", "ph_range": "6.0–7.5"
+    },
+    "agronomy": {
+      "land_prep": "Fine seedbed in riverine alluvium",
+      "seed_rate": "6–8 kg/acre",
+      "fertilizer": "NPK 40:20:20 kg/acre",
+      "irrigation": "Rainfed; avoid water stress at vegetative peak",
+      "intercropping": "Sole crop; rotate with paddy"
+    },
+    "pests": [
+      { "name": "Jute hairy caterpillar", "severity": "High", "treatment": "Quinalphos spray" },
+      { "name": "Stem rot", "severity": "Medium", "treatment": "Drainage; resistant varieties" },
+      { "name": "Semilooper", "severity": "Low", "treatment": "Handpicking" }
+    ],
+    "resources": [
+      { "title": "Jute Retting and Fiber Extraction", "type": "video", "duration": "13 min" },
+      { "title": "Natural Fiber Crops", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "mango",
+    "name": "Mango",
+    "scientific_name": "Mangifera indica",
+    "category": "Fruits",
+    "season": "Perennial",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "UP, Maharashtra, AP",
+    "duration": "Perennial (bears from 5th year)",
+    "expected_yield": "8–12 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "Very High",
+    "market_price": "₹2,500–5,000/quintal",
+    "image_file": "File:Mango.jpg",
+    "description": "The 'King of Fruits' and India's national fruit; India is the world's largest producer, exporting fresh and processed (pulp, juice) mango. Mature orchards yield for decades with strong domestic and export demand.",
+    "overview": {
+      "family": "Anacardiaceae", "lifecycle": "Perennial",
+      "planting_depth": "Grafted saplings 6–8 cm",
+      "spacing": "10x10 m", "soil_type": "Well-drained, deep",
+      "ph_range": "5.5–7.5"
+    },
+    "agronomy": {
+      "land_prep": "Pits with FYM; grafted plants",
+      "seed_rate": "40–45 plants/acre",
+      "fertilizer": "NPK 500:250:500 g/tree/year (increasing)",
+      "irrigation": "Critical at flowering, fruit set, and development",
+      "intercropping": "Short-duration vegetables (young orchard)"
+    },
+    "pests": [
+      { "name": "Mango hopper", "severity": "High", "treatment": "Imidacloprid at panicle emergence" },
+      { "name": "Mango weevil", "severity": "High", "treatment": "Clean orchard floor; post-harvest hot water" },
+      { "name": "Powdery mildew", "severity": "Medium", "treatment": "Sulfur spray at flowering" }
+    ],
+    "resources": [
+      { "title": "Mango Orchard Management", "type": "video", "duration": "17 min" },
+      { "title": "Mango Export Quality Standards", "type": "article", "duration": "9 min read" }
+    ]
+  },
+  {
+    "slug": "banana",
+    "name": "Banana",
+    "scientific_name": "Musa × paradisiaca",
+    "category": "Fruits",
+    "season": "Perennial",
+    "water_need": "High",
+    "climate": "Tropical",
+    "region": "Tamil Nadu, Maharashtra, UP",
+    "duration": "Perennial (bunch in 11–14 months)",
+    "expected_yield": "20–30 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹1,500–2,500/quintal",
+    "image_file": "File:Bananas.jpg",
+    "description": "The world's most consumed fruit, grown from suckers with ratoon cropping giving year-round income; India is the largest producer. Fresh fruit, ripening chambers, and processing all absorb production.",
+    "overview": {
+      "family": "Musaceae", "lifecycle": "Perennial",
+      "planting_depth": "15–20 cm (sucker)",
+      "spacing": "180x180 cm", "soil_type": "Deep loam",
+      "ph_range": "5.5–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Deep ploughing; pits with FYM",
+      "seed_rate": "1,300–1,400 suckers/acre",
+      "fertilizer": "NPK 350:150:450 g/plant/year (high K)",
+      "irrigation": "Drip daily in summer; critical at flowering",
+      "intercropping": "Short vegetables, beans (young plantation)"
+    },
+    "pests": [
+      { "name": "Panama wilt", "severity": "High", "treatment": "Resistant varieties (Grand Naine); clean suckers" },
+      { "name": "Rhizome weevil", "severity": "Medium", "treatment": "Parasitic wasps; clean cultivation" },
+      { "name": "Sigatoka leaf spot", "severity": "Medium", "treatment": "Mancozeb/propiconazole sprays" }
+    ],
+    "resources": [
+      { "title": "Banana Cultivation and Ratooning", "type": "video", "duration": "15 min" },
+      { "title": "Banana Ripening and Marketing", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "grapes",
+    "name": "Grapes",
+    "scientific_name": "Vitis vinifera",
+    "category": "Fruits",
+    "season": "Perennial",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Maharashtra, AP, Karnataka",
+    "duration": "Perennial (bears from 2nd year)",
+    "expected_yield": "8–12 tons/acre",
+    "difficulty": "Hard",
+    "profitability": "Very High",
+    "market_price": "₹3,000–6,000/quintal",
+    "image_file": "File:Grapes.jpg",
+    "description": "A premium trellised fruit with export-grade table varieties (Thompson Seedless) and wine grapes; India exports table grapes to Europe and Asia. High management intensity is rewarded with top-tier prices.",
+    "overview": {
+      "family": "Vitaceae", "lifecycle": "Perennial vine",
+      "planting_depth": "30 cm (rooted cuttings)",
+      "spacing": "300x150 cm", "soil_type": "Well-drained, light",
+      "ph_range": "6.0–7.5"
+    },
+    "agronomy": {
+      "land_prep": "Trellis (bower) system; drip irrigation",
+      "seed_rate": "450–500 vines/acre",
+      "fertilizer": "NPK 200:150:200 kg/acre + micronutrients",
+      "irrigation": "Drip; critical at berry development",
+      "intercropping": "Sole crop under trellis"
+    },
+    "pests": [
+      { "name": "Powdery mildew", "severity": "High", "treatment": "Sulfur spray at bunch closure" },
+      { "name": "Downy mildew", "severity": "High", "treatment": "Metalaxyl + mancozeb" },
+      { "name": "Thrips", "severity": "Medium", "treatment": "Spinosad spray" }
+    ],
+    "resources": [
+      { "title": "Table Grape Production", "type": "video", "duration": "16 min" },
+      { "title": "Grape Export Compliance", "type": "article", "duration": "10 min read" }
+    ]
+  },
+  {
+    "slug": "orange",
+    "name": "Orange",
+    "scientific_name": "Citrus × sinensis",
+    "category": "Fruits",
+    "season": "Perennial",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Maharashtra, MP, Rajasthan",
+    "duration": "Perennial (bears from 4th year)",
+    "expected_yield": "10–15 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹2,500–4,000/quintal",
+    "image_file": "File:Oranges.jpg",
+    "description": "A vitamin-C-rich citrus with year-round demand for fresh fruit and juice; Nagpur mandarins are India's most famous orange. Good orchard sanitation and irrigation timing drive quality and price.",
+    "overview": {
+      "family": "Rutaceae", "lifecycle": "Perennial",
+      "planting_depth": "10–15 cm (grafted)",
+      "spacing": "450x450 cm", "soil_type": "Well-drained, deep",
+      "ph_range": "5.5–6.5"
+    },
+    "agronomy": {
+      "land_prep": "Pits with FYM; grafted plants on rootstock",
+      "seed_rate": "50–55 plants/acre",
+      "fertilizer": "NPK 600:300:300 g/tree/year",
+      "irrigation": "Critical at flowering and fruit development",
+      "intercropping": "Short vegetables (young orchard)"
+    },
+    "pests": [
+      { "name": "Citrus canker", "severity": "High", "treatment": "Copper sprays; windbreak planting" },
+      { "name": "Fruit fly", "severity": "High", "treatment": "Methyl eugenol traps" },
+      { "name": "Leaf miner", "severity": "Medium", "treatment": "Neem oil / spinosad at flush" }
+    ],
+    "resources": [
+      { "title": "Citrus Orchard Management", "type": "video", "duration": "14 min" },
+      { "title": "Citrus Pest and Disease Calendar", "type": "article", "duration": "9 min read" }
+    ]
+  },
+  {
+    "slug": "papaya",
+    "name": "Papaya",
+    "scientific_name": "Carica papaya",
+    "category": "Fruits",
+    "season": "Perennial",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Pan-India",
+    "duration": "Perennial (fruit in 8–10 months)",
+    "expected_yield": "15–20 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "High",
+    "market_price": "₹1,000–1,800/quintal",
+    "image_file": "File:Papaya.jpg",
+    "description": "A fast-bearing fruit tree that starts fruiting within a year of planting; papain extraction from unripe fruit adds an industrial income stream. Quick returns make it popular on small and medium farms.",
+    "overview": {
+      "family": "Caricaceae", "lifecycle": "Perennial (short-lived)",
+      "planting_depth": "2–3 cm (seedling)",
+      "spacing": "180x180 cm", "soil_type": "Well-drained, fertile",
+      "ph_range": "6.0–6.5"
+    },
+    "agronomy": {
+      "land_prep": "Pits with FYM; good drainage essential",
+      "seed_rate": "1,300–1,500 plants/acre (incl. males)",
+      "fertilizer": "NPK 200:100:200 g/plant/year",
+      "irrigation": "Regular; mulching recommended",
+      "intercropping": "Vegetables (first year)"
+    },
+    "pests": [
+      { "name": "Papaya ringspot virus", "severity": "High", "treatment": "Resistant varieties; rogue infected plants" },
+      { "name": "Fruit fly", "severity": "High", "treatment": "Bait sprays; clean harvest" },
+      { "name": "Powdery mildew", "severity": "Low", "treatment": "Sulfur spray" }
+    ],
+    "resources": [
+      { "title": "Papaya Production", "type": "video", "duration": "11 min" },
+      { "title": "Papain Extraction Industry", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "guava",
+    "name": "Guava",
+    "scientific_name": "Psidium guajava",
+    "category": "Fruits",
+    "season": "Perennial",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "UP, Maharashtra, AP",
+    "duration": "Perennial (bears from 3rd year)",
+    "expected_yield": "10–15 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "High",
+    "market_price": "₹1,500–2,500/quintal",
+    "image_file": "File:Guava.jpg",
+    "description": "A hardy, high-yielding fruit tree rich in Vitamin C, bearing fruit nearly year-round with low management needs; it tolerates poor soils and drought. Fresh and processing (juice, jelly) markets are steady.",
+    "overview": {
+      "family": "Myrtaceae", "lifecycle": "Perennial",
+      "planting_depth": "10–15 cm (grafted)",
+      "spacing": "600x600 cm", "soil_type": "Wide adaptability",
+      "ph_range": "5.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Pits with FYM; grafted saplings",
+      "seed_rate": "18–20 plants/acre",
+      "fertilizer": "NPK 300:150:300 g/tree/year",
+      "irrigation": "Critical at flowering and fruit set",
+      "intercropping": "Vegetables, pulses (young orchard)"
+    },
+    "pests": [
+      { "name": "Fruit fly", "severity": "High", "treatment": "Methyl eugenol traps" },
+      { "name": "Guava wilt", "severity": "High", "treatment": "Resistant rootstocks; Trichoderma drench" },
+      { "name": "Scale insects", "severity": "Low", "treatment": "Fish-oil rosin soap spray" }
+    ],
+    "resources": [
+      { "title": "Guava Orchard Management", "type": "video", "duration": "12 min" },
+      { "title": "Low-Maintenance Fruit Trees", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "pomegranate",
+    "name": "Pomegranate",
+    "scientific_name": "Punica granatum",
+    "category": "Fruits",
+    "season": "Perennial",
+    "water_need": "Low",
+    "climate": "Tropical",
+    "region": "Maharashtra, Rajasthan, AP",
+    "duration": "Perennial (bears from 3rd year)",
+    "expected_yield": "8–10 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "Very High",
+    "market_price": "₹6,000–10,000/quintal",
+    "image_file": "File:Pomegranate.jpg",
+    "description": "A drought-tolerant fruit with premium aril (seed) demand for fresh retail, juice, and exports to Europe and the Gulf. Its high water-use efficiency suits dry regions where other fruits struggle.",
+    "overview": {
+      "family": "Lythraceae", "lifecycle": "Perennial",
+      "planting_depth": "10–15 cm (grafted)",
+      "spacing": "450x450 cm", "soil_type": "Well-drained, light",
+      "ph_range": "5.5–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Pits with FYM; drip irrigation",
+      "seed_rate": "50–55 plants/acre",
+      "fertilizer": "NPK 600:200:200 g/tree/year",
+      "irrigation": "Drip; regulated deficit before flowering",
+      "intercropping": "Pulses, vegetables (young orchard)"
+    },
+    "pests": [
+      { "name": "Fruit borer", "severity": "High", "treatment": "Trap crops + spinosad sprays" },
+      { "name": "Bacterial blight", "severity": "High", "treatment": "Copper sprays; prune infected twigs" },
+      { "name": "Thrips", "severity": "Medium", "treatment": "Fipronil spray" }
+    ],
+    "resources": [
+      { "title": "Pomegranate for Export", "type": "video", "duration": "15 min" },
+      { "title": "Water-Smart Fruit Farming", "type": "article", "duration": "8 min read" }
+    ]
+  },
+  {
+    "slug": "watermelon",
+    "name": "Watermelon",
+    "scientific_name": "Citrullus lanatus",
+    "category": "Fruits",
+    "season": "Kharif",
+    "water_need": "High",
+    "climate": "Tropical",
+    "region": "Pan-India",
+    "duration": "80–95 days",
+    "expected_yield": "10–15 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "High",
+    "market_price": "₹800–1,500/quintal",
+    "image_file": "File:Watermelons.jpg",
+    "description": "A quick, high-water-content summer fruit that matures in under three months on sandy soils; it needs abundant irrigation and good pollination. Fast cycles and strong seasonal demand reward early-market growers.",
+    "overview": {
+      "family": "Cucurbitaceae", "lifecycle": "Annual",
+      "planting_depth": "2–3 cm", "spacing": "200x60 cm",
+      "soil_type": "Sandy loam", "ph_range": "6.0–7.0"
+    },
+    "agronomy": {
+      "land_prep": "Raised beds; ridges",
+      "seed_rate": "400–500 g/acre",
+      "fertilizer": "NPK 60:40:40 kg/acre",
+      "irrigation": "High; critical at flowering and fruit growth",
+      "intercropping": "Sole crop; early vegetables"
+    },
+    "pests": [
+      { "name": "Aphids", "severity": "Medium", "treatment": "Imidacloprid" },
+      { "name": "Powdery mildew", "severity": "Medium", "treatment": "Sulfur spray" },
+      { "name": "Fruit fly", "severity": "Medium", "treatment": "Cue-lure traps" }
+    ],
+    "resources": [
+      { "title": "Watermelon Production", "type": "video", "duration": "9 min" },
+      { "title": "Summer Fruit Farming", "type": "article", "duration": "6 min read" }
+    ]
+  },
+  {
+    "slug": "apple",
+    "name": "Apple",
+    "scientific_name": "Malus domestica",
+    "category": "Fruits",
+    "season": "Perennial",
+    "water_need": "Medium",
+    "climate": "Temperate",
+    "region": "HP, J&K, Uttarakhand",
+    "duration": "Perennial (bears from 5th year)",
+    "expected_yield": "10–15 tons/acre",
+    "difficulty": "Hard",
+    "profitability": "Very High",
+    "market_price": "₹5,000–9,000/quintal",
+    "image_file": "File:Apples.jpg",
+    "description": "The premier temperate fruit of Himalayan valleys, needing winter chilling and careful orchard management; high-density plantings on dwarf rootstocks are raising yields. Premium table grades and processing both pay well.",
+    "overview": {
+      "family": "Rosaceae", "lifecycle": "Perennial",
+      "planting_depth": "10–15 cm (grafted)",
+      "spacing": "400x400 cm (standard); 240x90 cm (HDP)",
+      "soil_type": "Well-drained, deep loam",
+      "ph_range": "5.5–6.5"
+    },
+    "agronomy": {
+      "land_prep": "Terracing on slopes; staking",
+      "seed_rate": "25–30 plants/acre (standard); ~1,200 (HDP)",
+      "fertilizer": "NPK 500:250:500 g/tree/year + Zn/B/Fe",
+      "irrigation": "Drip; critical at flowering and fruit sizing",
+      "intercropping": "Strawberry, vegetables (young orchard)"
+    },
+    "pests": [
+      { "name": "Apple scab", "severity": "High", "treatment": "Mancozeb/difenoconazole at green tip" },
+      { "name": "Woolly aphid", "severity": "Medium", "treatment": "Imidacloprid; resistant rootstocks" },
+      { "name": "Codling moth", "severity": "High", "treatment": "Pheromone mating disruption + spinosad" }
+    ],
+    "resources": [
+      { "title": "High-Density Apple Orchards", "type": "video", "duration": "18 min" },
+      { "title": "Temperate Fruit Cultivation", "type": "article", "duration": "10 min read" }
+    ]
+  },
+  {
+    "slug": "lemon",
+    "name": "Lemon",
+    "scientific_name": "Citrus limon",
+    "category": "Fruits",
+    "season": "Perennial",
+    "water_need": "Medium",
+    "climate": "Tropical",
+    "region": "Rajasthan, UP, MP",
+    "duration": "Perennial (bears from 4th year)",
+    "expected_yield": "6–8 tons/acre",
+    "difficulty": "Medium",
+    "profitability": "High",
+    "market_price": "₹3,000–5,000/quintal",
+    "image_file": "File:Lemons.jpg",
+    "description": "A versatile citrus with year-round fruit production in two main flushes, essential for cooking, beverages, and juice concentrate; it bears almost continuously in warm climates. Steady all-season demand keeps prices firm.",
+    "overview": {
+      "family": "Rutaceae", "lifecycle": "Perennial",
+      "planting_depth": "10–15 cm (grafted)",
+      "spacing": "400x400 cm", "soil_type": "Well-drained loam",
+      "ph_range": "5.5–6.5"
+    },
+    "agronomy": {
+      "land_prep": "Pits with FYM; grafted plants",
+      "seed_rate": "25–30 plants/acre",
+      "fertilizer": "NPK 500:250:250 g/tree/year",
+      "irrigation": "Critical at flowering and fruit development",
+      "intercropping": "Vegetables (young orchard)"
+    },
+    "pests": [
+      { "name": "Citrus canker", "severity": "High", "treatment": "Copper sprays; windbreaks" },
+      { "name": "Fruit fly", "severity": "High", "treatment": "Methyl eugenol traps" },
+      { "name": "Leaf miner", "severity": "Medium", "treatment": "Neem oil / spinosad at flush" }
+    ],
+    "resources": [
+      { "title": "Lemon Production", "type": "video", "duration": "11 min" },
+      { "title": "Citrus Nutrition", "type": "article", "duration": "7 min read" }
+    ]
+  },
+  {
+    "slug": "sisal",
+    "name": "Sisal",
+    "scientific_name": "Agave sisalana",
+    "category": "Fiber Crops",
+    "season": "Perennial",
+    "water_need": "Low",
+    "climate": "Tropical",
+    "region": "Tamil Nadu, Karnataka + East Africa",
+    "duration": "Perennial (leaf harvest from 3rd year)",
+    "expected_yield": "1.5–2.0 tons/acre",
+    "difficulty": "Easy",
+    "profitability": "Medium",
+    "market_price": "₹8,000–12,000/ton (fiber)",
+    "image_file": "File:Sisal.jpg",
+    "description": "A rugged, drought-hardy agave yielding strong white fiber for ropes, carpets, and composites, thriving on poor dry soils with minimal care; East Africa is a major producing region. Leaves are cut for 7–10 years per plant.",
+    "overview": {
+      "family": "Asparagaceae", "lifecycle": "Perennial",
+      "planting_depth": "10–15 cm (bulbils/suckers)",
+      "spacing": "150x100 cm", "soil_type": "Well-drained, even poor soils",
+      "ph_range": "6.0–7.5"
+    },
+    "agronomy": {
+      "land_prep": "Light land preparation; contour planting on slopes",
+      "seed_rate": "2,000–2,500 bulbils/acre",
+      "fertilizer": "Minimal; organic mulch at planting",
+      "irrigation": "Rainfed; drought tolerant",
+      "intercropping": "Young sisal with food crops"
+    },
+    "pests": [
+      { "name": "Sisal weevil", "severity": "Medium", "treatment": "Clean planting material; quarantine" },
+      { "name": "Leaf spot (Phytophthora)", "severity": "Medium", "treatment": "Drainage; copper sprays" },
+      { "name": "Zebra complex (viral)", "severity": "High", "treatment": "Roguing infected plants; clean bulbs" }
+    ],
+    "resources": [
+      { "title": "Sisal Production and Decortication", "type": "video", "duration": "13 min" },
+      { "title": "Agave Fiber Value Chain", "type": "article", "duration": "8 min read" }
+    ]
+  }
+]

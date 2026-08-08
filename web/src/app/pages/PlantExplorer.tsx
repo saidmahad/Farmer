@@ -136,15 +136,20 @@ export function PlantExplorer() {
 
   const filtered = useMemo(() => {
     if (!plants) return [];
-    const q = search.trim().toLowerCase();
+    const tokens = search.trim().toLowerCase().split(/\s+/).filter(Boolean);
     return plants.filter((p) => {
       if (filter !== 'all' && p.category !== filter) return false;
-      if (!q) return true;
-      return (
-        p.name.toLowerCase().includes(q) ||
-        (p.scientific_name || '').toLowerCase().includes(q) ||
-        (p.description || '').toLowerCase().includes(q)
-      );
+      if (!tokens.length) return true;
+      // Short identifier fields (name, scientific name, category) match by
+      // substring. The description matches on whole words only, so typing
+      // "rice" does not surface every crop whose blurb mentions "prices".
+      const haystack = `${p.name} ${p.scientific_name || ''} ${p.category || ''}`.toLowerCase();
+      const desc = (p.description || '').toLowerCase();
+      return tokens.every((tok) => {
+        if (haystack.includes(tok)) return true;
+        const esc = tok.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        return new RegExp(`(^|[^a-z0-9])${esc}(?![a-z0-9])`, 'i').test(desc);
+      });
     });
   }, [plants, search, filter]);
 
@@ -202,6 +207,12 @@ export function PlantExplorer() {
           })}
         </div>
       </div>
+
+      {!loading && !error && (
+        <p className="text-xs text-muted-foreground">
+          {filtered.length} / {plants?.length || 0} {t('plantsResultCount')}
+        </p>
+      )}
 
       {error && (
         <div className="bg-danger-red/10 border border-danger-red/30 text-danger-red text-sm rounded-md px-3 py-2">

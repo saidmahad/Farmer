@@ -12,6 +12,7 @@
 
 const path = require('path');
 const Database = require('better-sqlite3');
+const BASE_SCHEMA = require('./base-schema');
 
 const DB_PATH = process.env.DB_PATH || path.join(__dirname, 'agri.db');
 const db = new Database(DB_PATH);
@@ -20,28 +21,8 @@ db.pragma('journal_mode = WAL');
 db.pragma('foreign_keys = ON');
 
 // ---------------------------------------------------------------------
-// Schema
+// Schema (base tables; feature tables come from db/migrations/*)
 // ---------------------------------------------------------------------
-db.exec(`
-  CREATE TABLE IF NOT EXISTS users (
-    id            INTEGER PRIMARY KEY AUTOINCREMENT,
-    name          TEXT    NOT NULL,
-    email         TEXT    NOT NULL UNIQUE,
-    password_hash TEXT    NOT NULL,
-    created_at    TEXT    NOT NULL DEFAULT (datetime('now'))
-  );
-
-  CREATE TABLE IF NOT EXISTS crops (
-    id               INTEGER PRIMARY KEY AUTOINCREMENT,
-    crop_name        TEXT NOT NULL UNIQUE,
-    local_name       TEXT,
-    season           TEXT,
-    planting_method  TEXT NOT NULL,
-    irrigation       TEXT NOT NULL,
-    fertilizer       TEXT NOT NULL,
-    common_pests     TEXT,
-    days_to_harvest  TEXT
-  );
-`);
+db.exec(BASE_SCHEMA);
 
 module.exports = db;

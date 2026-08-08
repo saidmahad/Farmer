@@ -210,6 +210,7 @@ export interface Dictionary {
   plantsSubtitle: string;
   plantsSearchPlaceholder: string;
   plantsFilterAll: string;
+  plantsResultCount: string;
   plantsBackToList: string;
   plantsLoading: string;
   plantsOverview: string;
@@ -542,9 +543,10 @@ export const dictionaries: Record<Locale, Dictionary> = {
     soilHistoryEmpty: 'No submissions yet. Your past predictions will appear here.',
     soilLoading: 'Loading recent submissions…',
     plantsTitle: 'Plant explorer',
-    plantsSubtitle: 'Browse the full Figma catalog. Click any plant for agronomy, pest, and resource details.',
+    plantsSubtitle: 'Browse the verified crop catalog. Click any plant for agronomy, pest, and resource details.',
     plantsSearchPlaceholder: 'Search plants by name, scientific name, or description...',
     plantsFilterAll: 'All',
+    plantsResultCount: 'crops',
     plantsBackToList: 'Back to plants',
     plantsLoading: 'Loading plant details…',
     plantsOverview: 'Overview',
@@ -866,9 +868,10 @@ export const dictionaries: Record<Locale, Dictionary> = {
     soilHistoryEmpty: 'Wali gudbin ma jiraan.',
     soilLoading: 'Waa la soo dejinayaa…',
     plantsTitle: 'Sahaminta dhirta',
-    plantsSubtitle: 'Sahamin katalogga. Dooro dhir kasta si aad u hesho faahfaahinta beeridda, cayayaanka, iyo khayraadka.',
+    plantsSubtitle: 'Sahaminta katalogga la xaqiijiyay. Dooro dhir kasta si aad u hesho faahfaahinta beeridda, cayayaanka, iyo khayraadka.',
     plantsSearchPlaceholder: 'Raadi dhirta magaceeda, cilmiga, ama sharaxaadda...',
     plantsFilterAll: 'Dhammaan',
+    plantsResultCount: 'dhir',
     plantsBackToList: 'Ku noqo dhirta',
     plantsLoading: 'Waa la soo dejinayaa faahfaahinta dhirta…',
     plantsOverview: 'Guud',
@@ -1190,9 +1193,10 @@ export const dictionaries: Record<Locale, Dictionary> = {
     soilHistoryEmpty: 'لا توجد إرساليات بعد.',
     soilLoading: 'جاري تحميل الإرساليات…',
     plantsTitle: 'مستكشف النباتات',
-    plantsSubtitle: 'تصفح الكتالوج. انقر على أي نبات للحصول على تفاصيله.',
+    plantsSubtitle: 'تصفح الكتالوج الموثق. انقر على أي نبات للحصول على تفاصيل الزراعة والآفات والموارد.',
     plantsSearchPlaceholder: 'ابحث بالاسم أو الاسم العلمي أو الوصف...',
     plantsFilterAll: 'الكل',
+    plantsResultCount: 'نباتات',
     plantsBackToList: 'العودة إلى النباتات',
     plantsLoading: 'جاري تحميل التفاصيل…',
     plantsOverview: 'نظرة عامة',

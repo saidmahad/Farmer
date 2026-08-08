@@ -1,0 +1,24 @@
+# Render Blueprint — deploy from GitHub with: New + → Blueprint → select repo.
+# This file is read automatically; no manual service setup required.
+#
+# Free demo note: the free tier has an ephemeral filesystem, so the SQLite
+# database resets on each redeploy/restart. For persistent data, switch
+# `plan` to starter (~$7/mo) and add a disk, or set DB_PATH to a mounted
+# volume.
+services:
+  - type: web
+    name: agri-advisor
+    runtime: node
+    plan: free
+    buildCommand: npm ci && cd web && npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: FORCE_HTTPS
+        value: "true"
+      # Generated once at creation; rotate it to invalidate all sessions.
+      - key: JWT_SECRET
+        generateValue: true

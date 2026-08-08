@@ -1,0 +1,11 @@
+node_modules
+web/node_modules
+.git
+.env
+db/*.db
+db/*.db-*
+backups
+.chrome-profile
+screenshots
+docs/screenshots
+*.log
