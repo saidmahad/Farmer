@@ -25,4 +25,29 @@ db.pragma('foreign_keys = ON');
 // ---------------------------------------------------------------------
 db.exec(BASE_SCHEMA);
 
+// ---------------------------------------------------------------------
+// Auto-migrate on a fresh/partial database
+// ---------------------------------------------------------------------
+// If the migration-created feature tables (plants, diseases, videos,
+// chat, ...) are missing, apply the full migration chain right now.
+// This makes the server self-healing: it works identically whether it is
+// started via `npm start` (migrate && server) or a bare `node server.js`
+// — which is exactly what a manually-created cloud service does (e.g. a
+// Render web service whose start command is `node server.js`).
+const hasFeatureTables = (() => {
+  // Sentinel check across the key migration-created tables: if ANY of
+  // them is missing the chain is incomplete (fresh DB, or a deploy whose
+  // start command skipped `npm start`), so apply the full migration set.
+  const tables = db
+    .prepare("SELECT name FROM sqlite_master WHERE type='table'")
+    .all()
+    .map((r) => r.name);
+  return ['plants', 'diseases', 'videos'].every((t) => tables.includes(t));
+})();
+if (!hasFeatureTables) {
+  console.log('[db] Feature tables missing — applying migrations automatically...');
+  require('./migrations/run').apply(db);
+  console.log('[db] Migrations applied.');
+}
+
 module.exports = db;

@@ -5,25 +5,16 @@
 //   node db/migrations/run.js
 //   DB_PATH=/path/to/other.db node db/migrations/run.js
 //
+// Programmatic use (used by db/index.js for self-healing bootstraps):
+//   const { apply } = require('./db/migrations/run');
+//   apply(db);
+//
 // Idempotent: re-running is safe — guarded ALTERs and CREATE TABLE IF NOT
 // EXISTS means each step is a no-op once applied. Prints a short summary.
 
 const path = require('path');
 const Database = require('better-sqlite3');
 const BASE_SCHEMA = require('../base-schema');
-
-const DB_PATH =
-  process.env.DB_PATH || path.join(__dirname, '..', '..', 'db', 'agri.db');
-
-const db = new Database(DB_PATH);
-db.pragma('journal_mode = WAL');
-db.pragma('foreign_keys = ON');
-
-// Fresh-DB bootstrap: the legacy `users`/`crops` tables are normally
-// created by db/index.js when the server boots, but the migration chain
-// assumes they already exist. Create them here so a brand-new database
-// (e.g. a fresh deployment) can run the full chain in order.
-db.exec(BASE_SCHEMA);
 
 // Discover migrations in deterministic order. Each file is expected to
 // export { up(db) -> summary }.
@@ -42,8 +33,10 @@ const migrations = [
   { file: '007_seed_crops_from_catalog', m: require('./007_seed_crops_from_catalog') },
 ];
 
-function run() {
-  console.log(`Running migrations against ${DB_PATH} ...`);
+// Apply the full migration chain against an open better-sqlite3 db.
+// Returns a summary of what each step did.
+function apply(db, { quiet = false } = {}) {
+  if (!quiet) console.log(`Running migrations against ${db.name} ...`);
 
   const summary = { steps: [] };
   for (const { file, m } of migrations) {
@@ -68,19 +61,42 @@ function run() {
     });
   }
 
-  console.log('\nMigration summary:');
-  for (const s of summary.steps) {
-    console.log(`  step ${s.step}:`, JSON.stringify(s.result));
-    console.log(`           tables now: ${s.tables}`);
+  if (!quiet) {
+    console.log('\nMigration summary:');
+    for (const s of summary.steps) {
+      console.log(`  step ${s.step}:`, JSON.stringify(s.result));
+      console.log(`           tables now: ${s.tables}`);
+    }
+    console.log('\nDone.');
   }
-  console.log('\nDone.');
+  return summary;
 }
 
-try {
-  run();
-} catch (err) {
-  console.error('Migration failed:', err);
-  process.exit(1);
-} finally {
-  db.close();
+module.exports = { apply, migrations };
+
+// CLI entry point: only when executed directly (node db/migrations/run.js).
+// db/index.js requires this module programmatically and calls apply(db)
+// itself, so the CLI path must not hijack the process.
+if (require.main === module) {
+  const DB_PATH =
+    process.env.DB_PATH || path.join(__dirname, '..', '..', 'db', 'agri.db');
+
+  const db = new Database(DB_PATH);
+  db.pragma('journal_mode = WAL');
+  db.pragma('foreign_keys = ON');
+
+  // Fresh-DB bootstrap: the legacy `users`/`crops` tables are normally
+  // created by db/index.js when the server boots, but the migration chain
+  // assumes they already exist. Create them here so a brand-new database
+  // (e.g. a fresh deployment) can run the full chain in order.
+  db.exec(BASE_SCHEMA);
+
+  try {
+    apply(db);
+  } catch (err) {
+    console.error('Migration failed:', err);
+    process.exit(1);
+  } finally {
+    db.close();
+  }
 }

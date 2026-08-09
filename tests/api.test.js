@@ -25,7 +25,8 @@ test.before(async () => {
   // Run the real migration chain against the isolated test DB first, so
   // the test environment matches a fresh production deploy (full
   // plant/disease/video/crops catalog seeded, exactly as `npm start` does).
-  require('../db/migrations/run');
+  const { apply } = require('../db/migrations/run');
+  apply(require('../db'));
 
   // Build a minimal app instance mirroring server.js, without starting
   // on a fixed port (each test run binds to an ephemeral port).
