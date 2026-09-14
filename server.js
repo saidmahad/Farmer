@@ -35,7 +35,7 @@ app.use(
   helmet({
     // Relaxed CSP for the React app served from web/dist.
     // fonts.googleapis.com / fonts.gstatic.com are allowlisted so the
-    // FarmerAI "Inter" typeface (per the Figma design) can be loaded;
+    // Famer "Inter" typeface (per the Figma design) can be loaded;
     // images.unsplash.com is allowlisted so DiseaseLibrary / PlantExplorer
     // / CropRecommendation can show their catalog hero imagery;
     // img.youtube.com is allowlisted so VideoHub thumbnails render;

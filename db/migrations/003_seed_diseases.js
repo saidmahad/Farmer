@@ -1,6 +1,15 @@
 // db/migrations/003_seed_diseases.js
 // Seeds the diseases catalog used by DiseaseLibrary. Forward-only,
 // idempotent — re-running is a no-op.
+//
+// Image policy (mirrors 006/resolve-commons-images.js): every disease uses
+// a Wikimedia Commons photo whose FILENAME describes the subject (disease,
+// pathogen, or pest — e.g. "Rice blast.jpg" for rice-blast), so a URL can
+// be audited against the record it labels. Unsplash photo IDs are opaque
+// hashes and produced the duplicated/broken mappings this file fixes.
+// All URLs below were resolved via the Commons API (prop=imageinfo) and
+// verified to exist; scripts/probe-commons-urls.js documents the 429
+// rate limiting that makes direct CDN probing unreliable.
 
 function tableExists(db, name) {
   return Boolean(
@@ -23,7 +32,7 @@ const DISEASES = [
       'Spray Tricyclazole 75% WP at 0.6 g/L or Isoprothiolane at 1.5 ml/L at boot stage. Repeat after 10–12 days if humid conditions persist. Drain the field to reduce humidity around the canopy.',
     prevention:
       'Use resistant varieties (IR 64, Improved Samba Mahsuri). Avoid excess nitrogen. Maintain proper plant spacing for airflow.',
-    image_url: 'https://images.unsplash.com/photo-1530507629858-e3759c1e0d1b?w=400&h=300&fit=crop',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Rice_blast_symptoms.jpg/960px-Rice_blast_symptoms.jpg',
   },
   {
     slug: 'wheat-yellow-rust',
@@ -37,7 +46,7 @@ const DISEASES = [
       'Propiconazole 25 EC at 1 ml/L or Tebuconazole 250 EC at 1 ml/L at first sign of stripe formation. Repeat after 15 days. Curative fungicide use only under extension officer guidance.',
     prevention:
       'Sow resistant varieties (HD 3086, DBW 187). Early sowing in November avoids peak infection window. Avoid late nitrogen top-dressing.',
-    image_url: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&h=300&fit=crop',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/d/dd/Stripe_rust_on_wheat.jpg',
   },
   {
     slug: 'tomato-late-blight',
@@ -51,7 +60,7 @@ const DISEASES = [
       'Mancozeb 75% WP at 2.5 g/L as a protectant every 7–10 days. Switch to Cymoxanil + Mancozeb or Dimethomorph under heavy pressure. Remove and burn infected plants immediately.',
     prevention:
       'Use certified disease-free seed and resistant hybrids. Stake and prune for airflow. Avoid overhead irrigation. Rotate away from potato for 2+ seasons.',
-    image_url: 'https://images.unsplash.com/photo-1592841200221-a6898f307baa?w=400&h=300&fit=crop',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Phytophthora_infestans_%28late_blight%29_on_tomato.jpg/960px-Phytophthora_infestans_%28late_blight%29_on_tomato.jpg',
   },
   {
     slug: 'cotton-pink-bollworm',
@@ -65,7 +74,7 @@ const DISEASES = [
       'Pheromone traps (5/acre) for monitoring and mass trapping. Spray Emamectin Benzoate 5% SG at 0.4 g/L at peak flowering. Avoid late-season cotton — terminate crop by January.',
     prevention:
       'Install pheromone traps early. Follow the mandatory refuge strategy with Bt cotton (20% non-Bt). Conduct clean-up ploughing immediately after harvest to destroy pupae in soil.',
-    image_url: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&h=300&fit=crop',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/f/f2/Pectinophora_gossypiella_1265079.jpg',
   },
   {
     slug: 'maize-fall-armyworm',
@@ -79,7 +88,7 @@ const DISEASES = [
       'Emamectin Benzoate 5% SG at 0.4 g/L directed into the whorl. Or apply Spinetoram 11.7% SC at 0.5 ml/L. Treat during early morning or evening when larvae are active.',
     prevention:
       'Scout whorls weekly from emergence through tasseling. Pheromone traps for early warning. Intercrop with legumes to disrupt moth host-finding. Destroy crop residues after harvest.',
-    image_url: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=400&h=300&fit=crop',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/4/44/Spodoptera_frugiperda.jpg',
   },
   {
     slug: 'groundnut-tikka-leaf-spot',
@@ -93,7 +102,7 @@ const DISEASES = [
       'Mancozeb 75% WP at 2.5 g/L at first appearance; 2–3 sprays at 10–14 day intervals. Chlorothalonil is an alternative under wet weather. Begin at 30–35 DAS.',
     prevention:
       'Sow treated kernels with Captan or Thiram. Use resistant varieties (GG 20, TG 37A). Follow 2-year rotation with cereals. Remove volunteer plants.',
-    image_url: 'https://images.unsplash.com/photo-1567892320421-2c45ca7c2238?w=400&h=300&fit=crop',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Sporulating_Cercospora_on_groundnut_leaf_tissue_%E2%80%93_400x.jpg',
   },
   {
     slug: 'onion-purple-blotch',
@@ -107,7 +116,7 @@ const DISEASES = [
       'Mancozeb 75% WP at 2.5 g/L + Iprodione at 1 ml/L alternated every 10–14 days. Tebuconazole 250 EC at 1 ml/L is a strong curative option.',
     prevention:
       'Use disease-free sets. Practice 3-year crop rotation. Wider spacing (15–20 cm) improves airflow. Avoid overhead irrigation late in the day.',
-    image_url: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400&h=300&fit=crop',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/8/8d/Alternaria_porri.jpg',
   },
   {
     slug: 'sugarcane-red-rot',
@@ -121,7 +130,7 @@ const DISEASES = [
       'No effective curative treatment once infected. Rogue and burn infected clumps. Treat healthy setts in 0.1% Carbendazim solution for 15 minutes before planting.',
     prevention:
       'Plant only disease-free seed cane from a certified source. Use resistant varieties (Co 0238, Co 0118). Avoid waterlogging. Long rotation away from sugarcane.',
-    image_url: 'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=400&h=300&fit=crop',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/2/20/Sugarcane.jpg',
   },
   {
     slug: 'cotton-whitefly',
@@ -135,7 +144,7 @@ const DISEASES = [
       'Yellow sticky traps (10/acre) for monitoring. Spray Neem oil 0.5% or Diafenthiuron 50% WP at 1.2 g/L. Rotate chemical groups to avoid resistance.',
     prevention:
       'Avoid late-season cotton. Destroy crop residue immediately after harvest. Border-trap cropping with sunflower or marigold.',
-    image_url: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&h=300&fit=crop',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/Silverleaf_whitefly.jpg',
   },
   {
     slug: 'tomato-leaf-curl-virus',
@@ -149,7 +158,7 @@ const DISEASES = [
       'No cure once infected. Rogue infected plants. Control the whitefly vector with Imidacloprid 17.8% SL at 0.5 ml/L or yellow sticky traps.',
     prevention:
       'Plant only TYLCV-resistant hybrids. Use reflective silver mulch to repel whiteflies. Install 50-mesh insect-proof netting in nurseries.',
-    image_url: 'https://images.unsplash.com/photo-1592841200221-a6898f307baa?w=400&h=300&fit=crop',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Tomato_leaf_curl_Taiwan_virus.jpg',
   },
   {
     slug: 'rice-bph',
@@ -163,7 +172,7 @@ const DISEASES = [
       'Imidacloprid 17.8% SL at 0.5 ml/L or Clothianidin 50% WDG at 0.5 g/L. Drain the field for 2–3 days to disrupt the pest. Avoid pyrethroids — they flare BPH.',
     prevention:
       'Use resistant varieties. Maintain proper plant spacing (20x15 cm). Avoid excess nitrogen which attracts BPH. Alternate wet/dry irrigation rather than continuous flooding.',
-    image_url: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/BPH_damage2.jpg/960px-BPH_damage2.jpg',
   },
   {
     slug: 'maize-nutrient-deficiency',
@@ -177,7 +186,7 @@ const DISEASES = [
       'Apply urea at 50 kg N/ha as top-dressing at knee-height stage. Foliar spray of 2% urea gives a quick green-up within 5–7 days for emergency correction.',
     prevention:
       'Apply the recommended 150 kg N/ha in split doses (basal + knee-height + tasseling). Incorporate crop residues from the previous season to build organic nitrogen.',
-    image_url: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=400&h=300&fit=crop',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/K-deficient_maize_on_Cedara_4_2003-01-13.jpg/960px-K-deficient_maize_on_Cedara_4_2003-01-13.jpg',
   },
 ];
 

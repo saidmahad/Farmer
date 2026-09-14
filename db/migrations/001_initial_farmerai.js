@@ -1,5 +1,5 @@
 // db/migrations/001_initial_farmerai.js
-// First FarmerAI migration. Adds the new user profile fields and creates
+// First Famer migration. Adds the new user profile fields and creates
 // empty tables for the features shipping across build groups 2–5.
 //
 // Forward-only. No destructive schema changes to existing tables — the

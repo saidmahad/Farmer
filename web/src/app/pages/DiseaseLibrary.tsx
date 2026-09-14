@@ -50,6 +50,44 @@ function severityClass(sev?: string | null) {
   }
 }
 
+// Shared fallback for a disease image that fails to load: the same Bug-on-
+// tinted-background placeholder the card already renders when a disease has
+// no image_url at all, so the UI never shows a broken-image icon. Only the
+// `img` element is swapped out — layout classes are caller-provided and
+// unchanged.
+function DiseaseImageWithFallback({
+  src,
+  alt,
+  className,
+}: {
+  src: string;
+  alt: string;
+  className: string;
+}) {
+  const [failed, setFailed] = useState(false);
+  // A corrected src (e.g. after a data fix) must reset the failure state.
+  useEffect(() => {
+    setFailed(false);
+  }, [src]);
+
+  if (failed || !src) {
+    return (
+      <div className={`${className} bg-danger-red/10 flex items-center justify-center`}>
+        <Bug className="w-8 h-8 text-danger-red" />
+      </div>
+    );
+  }
+  return (
+    <img
+      src={src}
+      alt={alt}
+      loading="lazy"
+      className={className}
+      onError={() => setFailed(true)}
+    />
+  );
+}
+
 export function DiseaseLibrary() {
   const [params, setParams] = useSearchParams();
   const navigate = useNavigate();
@@ -224,10 +262,9 @@ function DiseaseCard({
         className="group w-full text-start bg-white border border-border rounded-xl overflow-hidden hover:border-danger-red/50 hover:shadow-sm transition-all"
       >
         {disease.image_url ? (
-          <img
+          <DiseaseImageWithFallback
             src={disease.image_url}
             alt={disease.name}
-            loading="lazy"
             className="w-full h-32 object-cover bg-secondary"
           />
         ) : (
@@ -301,9 +338,13 @@ function DetailView({
       {!loading && disease && (
         <>
           <header className="bg-white border border-border rounded-xl overflow-hidden">
-            {disease.image_url && (
-              <img src={disease.image_url} alt={disease.name} className="w-full h-56 object-cover" />
-            )}
+            {disease.image_url ? (
+              <DiseaseImageWithFallback
+                src={disease.image_url}
+                alt={disease.name}
+                className="w-full h-56 object-cover"
+              />
+            ) : null}
             <div className="p-6">
               <div className="flex items-center gap-2 mb-2">
                 <h1 className="text-2xl font-semibold text-foreground leading-tight">

@@ -31,6 +31,7 @@ const migrations = [
   { file: '004_seed_videos', m: require('./004_seed_videos') },
   { file: '006_apply_verified_plant_catalog', m: require('./006_apply_verified_plant_catalog') },
   { file: '007_seed_crops_from_catalog', m: require('./007_seed_crops_from_catalog') },
+  { file: '008_fix_disease_images', m: require('./008_fix_disease_images') },
 ];
 
 // Apply the full migration chain against an open better-sqlite3 db.
