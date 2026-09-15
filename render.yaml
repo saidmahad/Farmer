@@ -10,7 +10,7 @@ services:
     name: agri-advisor
     runtime: node
     plan: free
-    buildCommand: npm ci && cd web && npm ci && npm run build
+    buildCommand: npm ci && cd web && npm ci --include=dev && npm run build
     startCommand: npm start
     healthCheckPath: /api/health
     autoDeploy: true
